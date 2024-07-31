@@ -10,12 +10,13 @@ module.exports = (plop) => {
                 type: 'list',
                 name: 'repo',
                 message: 'Please select the repository name',
-                choices: ['apps/next/src', 'apps/react/src', 'packages/ui'],
+                // appsのパスはプロジェクトに応じて選択肢に追加する
+                choices: ['packages/ui'],
             },
             {
                 type: 'input',
                 name: 'path',
-                message: 'Please enter the component path:',
+                message: 'Please enter the component path (e.g. components/button)',
             },
         ],
         actions: [

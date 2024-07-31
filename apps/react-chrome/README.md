@@ -1,1 +1,1 @@
-# React App
+# React Chrome Extension
