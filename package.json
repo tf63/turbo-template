@@ -9,7 +9,8 @@
         "type-check": "turbo type-check",
         "clean": "turbo clean",
         "format": "biome format . --write",
-        "prepare": "husky"
+        "prepare": "husky",
+        "generate": "plop"
     },
     "devDependencies": {
         "@biomejs/biome": "^1.8.3",
