@@ -1,7 +1,7 @@
 import { SampleCard } from '@/features/sample-card'
 import { Card } from '@ui/components/card'
 
-export default function Page(): JSX.Element {
+const Page = (): JSX.Element => {
     return (
         <main className="min-h-screen w-full p-10">
             <h1 className="text-xl bg-gray-300 p-5 rounded-lg">Next App</h1>
@@ -18,3 +18,5 @@ export default function Page(): JSX.Element {
         </main>
     )
 }
+
+export default Page
