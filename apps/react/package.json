@@ -1,0 +1,36 @@
+{
+    "name": "@repo/react",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "biome lint .",
+        "lint:fix": "biome lint . --apply",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@repo/ui": "workspace:*",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "clsx": "^2.1.1",
+        "tailwind-merge": "^2.4.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.8.3",
+        "@repo/config-tailwind": "workspace:*",
+        "@repo/config-typescript": "workspace:*",
+        "@types/node": "^20.11.24",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@storybook/react": "^8.1.1",
+        "@storybook/blocks": "^8.1.1",
+        "@vitejs/plugin-react-swc": "^3.7.0",
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.39",
+        "tailwindcss": "^3.4.6",
+        "typescript": "^5.5.4",
+        "vite": "^5.3.4"
+    }
+}

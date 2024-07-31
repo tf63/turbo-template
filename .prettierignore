@@ -1,0 +1,45 @@
+# use biome
+**/*.js
+**/*.jsx
+**/*.cjs
+**/*.mjs
+**/*.ts
+**/*.tsx
+**/*.cts
+**/*.mts
+**/*.json
+
+**/tsconfig.*
+**/.eslintrc
+**/.eslintignore
+**/.prettierrc
+**/.prettierignore
+**/vite.config.*
+**/next.config.*
+**/tailwind.config.*
+**/postcss.config.*
+**/plopfile.*
+**/jest.config.*
+
+# lock
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# trash
+**/.DS_Store
+**/*.hbs
+
+# dir
+**/node_modules/**/*
+**/public/**/*
+**/dist/**/*
+**/dist-ssr/**/*
+**/build/**/*
+**/coverage/**/*
+**/bin/**/*
+**/obj/**/*
+**/out/**/*
+**/.yarn/**/*
+**/.next/**/*
+**/.vercel/**/*

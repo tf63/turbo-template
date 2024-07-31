@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Default",
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "isolatedModules": true,
+        "composite": false,
+        "esModuleInterop": true,
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+
+        "skipLibCheck": true,
+        "declaration": true,
+        "declarationMap": true,
+        "inlineSources": false,
+
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "exactOptionalPropertyTypes": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": false,
+        "noPropertyAccessFromIndexSignature": false,
+
+        "preserveWatchOutput": true
+    },
+    "exclude": ["node_modules", "out", "dist", "build", ".next", "bower_components", "jspm_packages"]
+}

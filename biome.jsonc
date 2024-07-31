@@ -1,0 +1,121 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+    "formatter": {
+        "enabled": true,
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineEnding": "lf",
+        "lineWidth": 119,
+        "attributePosition": "auto",
+        "ignore": [
+            "**/package-lock.json",
+            "**/yarn.lock",
+            "**/pnpm-lock.yaml",
+            "**/.DS_Store",
+            "**/node_modules/**/*",
+            "**/public/**/*",
+            "**/dist/**/*",
+            "**/dist-ssr/**/*",
+            "**/build/**/*",
+            "**/coverage/**/*",
+            "**/bin/**/*",
+            "**/obj/**/*",
+            "**/out/**/*",
+            "**/.yarn/**/*",
+            "**/.next/**/*",
+            "**/.vercel/**/*",
+            "**/*.mdx"
+        ]
+    },
+    "organizeImports": { "enabled": true },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "a11y": { "recommended": true },
+            "complexity": { "recommended": true, "noBannedTypes": "off" },
+            "correctness": {
+                "recommended": true,
+                "noUnusedImports": "error",
+                "noUnusedVariables": "error",
+                "useHookAtTopLevel": "error",
+                "noEmptyPattern": "off"
+            },
+            "performance": { "recommended": true },
+            "security": { "recommended": true },
+            "style": {
+                "recommended": true,
+                "noDefaultExport": "warn",
+                "noImplicitBoolean": "error",
+                "noNonNullAssertion": "warn"
+            },
+            "suspicious": {
+                "recommended": true,
+                "noConsoleLog": "warn",
+                "useAwait": "error"
+            },
+            "nursery": { "useSortedClasses": "off" }
+        },
+
+        "ignore": [
+            "**/tsconfig.*",
+            "**/vite.config.*",
+            "**/next.config.*",
+            "**/tailwind.config.*",
+            "**/postcss.config.*",
+            "**/plopfile.*",
+            "**/jest.config.*",
+            "**/package-lock.json",
+            "**/yarn.lock",
+            "**/pnpm-lock.yaml",
+            "**/*.spec.*",
+            "**/*.test.*",
+            "**/.DS_Store",
+            "**/node_modules/**/*",
+            "**/public/**/*",
+            "**/dist/**/*",
+            "**/dist-ssr/**/*",
+            "**/build/**/*",
+            "**/coverage/**/*",
+            "**/bin/**/*",
+            "**/obj/**/*",
+            "**/out/**/*",
+            "**/.yarn/**/*",
+            "**/.next/**/*",
+            "**/.vercel/**/*",
+            "**/*.mdx"
+        ]
+    },
+    "javascript": {
+        "formatter": {
+            "jsxQuoteStyle": "double",
+            "quoteProperties": "asNeeded",
+            "trailingCommas": "es5",
+            "semicolons": "asNeeded",
+            "arrowParentheses": "always",
+            "bracketSpacing": true,
+            "bracketSameLine": false,
+            "quoteStyle": "single",
+            "attributePosition": "auto"
+        }
+    },
+    "overrides": [
+        {
+            "include": ["*.stories.*", "*.story.*"],
+            "linter": {
+                "rules": {
+                    "correctness": { "useHookAtTopLevel": "off" },
+                    "style": { "noDefaultExport": "off" }
+                }
+            }
+        },
+        {
+            "include": [".storybook/*"],
+            "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
+        },
+        {
+            "include": ["layout.*", "page.*", "loading.*", "error.*", "not-found.*", "App.*"],
+            "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
+        }
+    ]
+}

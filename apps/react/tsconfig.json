@@ -1,0 +1,11 @@
+{
+    "extends": "@repo/config-typescript/tsconfig.react.json",
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["./*"]
+        },
+        "types": ["node"]
+    },
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
