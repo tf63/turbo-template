@@ -7,4 +7,13 @@ export default defineConfig({
     server: {
         host: true,
     },
+    resolve: {
+        alias: [
+            { find: '@/', replacement: `${__dirname}/src/` },
+            {
+                find: '@ui/',
+                replacement: `${__dirname}/../../packages/ui/src/`,
+            },
+        ],
+    },
 })

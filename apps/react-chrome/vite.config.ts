@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 
 const manifest = defineManifest({
     manifest_version: 3,
-    name: 'My Extension',
+    name: 'Chrome Extension Template',
     version: '1.0.0',
     permissions: [],
     action: {
@@ -18,5 +18,14 @@ export default defineConfig({
     plugins: [react(), crx({ manifest })],
     server: {
         host: true,
+    },
+    resolve: {
+        alias: [
+            { find: '@/', replacement: `${__dirname}/src/` },
+            {
+                find: '@ui/',
+                replacement: `${__dirname}/../../packages/ui/src/`,
+            },
+        ],
     },
 })

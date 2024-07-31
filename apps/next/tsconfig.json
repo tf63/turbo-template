@@ -2,7 +2,8 @@
     "extends": "@repo/config-typescript/tsconfig.next.json",
     "compilerOptions": {
         "paths": {
-            "@/*": ["./*"]
+            "@/*": ["./*"],
+            "@ui/*": ["../../packages/ui/src/*"]
         },
         "types": ["node"]
     },
