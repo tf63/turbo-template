@@ -1,6 +1,7 @@
 import type { StorybookConfig } from '@storybook/nextjs'
 
 const config: StorybookConfig = {
+    // appsのパスはプロジェクトに応じて追加する
     stories: ['../../../packages/ui/src/**/*.stories.*', '../../../packages/ui/src/**/*.mdx'],
     addons: [
         '@chromatic-com/storybook',
