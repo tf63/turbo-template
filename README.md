@@ -19,18 +19,18 @@
 `apps` contains web applications.
 Each application in `apps/` only depends on packages within `packages/`, not on other applications.
 
-| package          | description                                                                                                                                                                       |
+| repo             | description                                                                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **next**         | [Next.js 14](https://nextjs.org/) (App Router) application with [Tailwind CSS](https://tailwindcss.com/)                                                                          |
 | **react**        | [React 18](https://react.dev/) application using [Vite](https://vitejs.dev/) for bundling and [Tailwind CSS](https://tailwindcss.com/)                                            |
 | **react-chrome** | Chrome Extension built with [React 18](https://react.dev/), using [CRX](https://crxjs.dev/vite-plugin/), [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/) |
-| **storybook**    | [Storybook](https://storybook.js.org/) server.                                                                                                                                    |
+| **storybook**    | [Storybook](https://storybook.js.org/) server                                                                                                                                     |
 
 ### packages
 
 `packages` contains reusable UI components and configuration files.
 
-| package               | description                                                                       |
+| repo                  | description                                                                       |
 | --------------------- | --------------------------------------------------------------------------------- |
 | **ui**                | Shared UI components library used across applications                             |
 | **config-tailwind**   | [Tailwind CSS](https://tailwindcss.com/) configuration shared across applications |
