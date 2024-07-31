@@ -11,7 +11,12 @@ module.exports = (plop) => {
                 name: 'repo',
                 message: 'Please select the repository name',
                 // appsのパスはプロジェクトに応じて選択肢に追加する
-                choices: ['packages/ui', 'apps/next/features'],
+                choices: [
+                    'packages/ui/src/components',
+                    'apps/next/features',
+                    'apps/react/src/features',
+                    'apps/react-chrome/src/features',
+                ],
             },
             {
                 type: 'input',
