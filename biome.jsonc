@@ -33,7 +33,7 @@
         "enabled": true,
         "rules": {
             "a11y": { "recommended": true },
-            "complexity": { "recommended": true, "noBannedTypes": "off" },
+            "complexity": { "recommended": true, "noBannedTypes": "off", "useArrowFunction": "error" },
             "correctness": {
                 "recommended": true,
                 "noUnusedImports": "error",
@@ -45,13 +45,14 @@
             "security": { "recommended": true },
             "style": {
                 "recommended": true,
-                "noDefaultExport": "warn",
+                "noDefaultExport": "off",
                 "noImplicitBoolean": "error",
                 "noNonNullAssertion": "warn"
             },
             "suspicious": {
                 "recommended": true,
-                "noConsoleLog": "warn",
+                "noConsoleLog": "error",
+                "noDebugger": "error",
                 "useAwait": "error"
             },
             "nursery": { "useSortedClasses": "off" }
@@ -106,21 +107,21 @@
     },
     "overrides": [
         {
-            "include": ["*.stories.*", "*.story.*"],
+            "include": ["features/", "components/", "lib/"],
             "linter": {
                 "rules": {
-                    "correctness": { "useHookAtTopLevel": "off" },
-                    "style": { "noDefaultExport": "off" }
+                    "style": { "noDefaultExport": "error" }
                 }
             }
         },
         {
-            "include": [".storybook/*"],
-            "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
-        },
-        {
-            "include": ["layout.*", "page.*", "loading.*", "error.*", "not-found.*", "App.*"],
-            "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
+            "include": ["*.stories.*", "*.story.*"],
+            "linter": {
+                "rules": {
+                    "style": { "noDefaultExport": "off" },
+                    "correctness": { "useHookAtTopLevel": "off" }
+                }
+            }
         }
     ]
 }
