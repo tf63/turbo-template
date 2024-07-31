@@ -3,12 +3,14 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
+        "predev": "rm -rf .next",
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
         "lint": "biome lint .",
         "lint:fix": "biome lint . --write",
-        "type-check": "tsc --noEmit"
+        "type-check": "tsc --noEmit",
+        "clean": "rm -rf .next"
     },
     "dependencies": {
         "@repo/ui": "workspace:*",

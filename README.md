@@ -1,6 +1,19 @@
 # Turborepo Template
 
-## Tools
+## Commands
+
+```shell
+pnpm dev        # Start the development server
+pnpm build      # Build the projects for production
+pnpm lint       # Lint the JavaScript/TypeScript files (not apply changes)
+pnpm lint:fix   # Lint the JavaScript/TypeScript files (apply changes)
+pnpm format     # Format the JavaScript/TypeScript files using Biome and other files using Prettier.
+pnpm generate   # Generate a component from templates with plop
+pnpm clean      # Remove build artifacts and other generated files
+pnpm type-check # Check TypeScript types to ensure type correctness throughout your codebase
+```
+
+## DevTools
 
 | tool                                                      | description                                                                |
 | --------------------------------------------------------- | -------------------------------------------------------------------------- |

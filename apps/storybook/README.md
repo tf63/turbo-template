@@ -4,11 +4,11 @@
 
 ## Commands
 
-```bash
+```shell
 pnpm dev       # start the storybook server on 6006
 pnpm build     # build the storybook
 pnpm lint      # lint story files (not apply changes)
-pnpm lint:fix  # lint story fiels (apply changes)
+pnpm lint:fix  # lint story files (apply changes)
 ```
 
 ## Addon
