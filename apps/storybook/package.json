@@ -6,7 +6,7 @@
         "dev": "storybook dev -p 6006",
         "build": "storybook build",
         "lint": "biome lint .",
-        "lint:fix": "biome lint . --apply"
+        "lint:fix": "biome lint . --write"
     },
     "dependencies": {
         "@repo/ui": "workspace:*",

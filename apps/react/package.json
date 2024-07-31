@@ -7,7 +7,7 @@
         "dev": "vite",
         "build": "tsc -b && vite build",
         "lint": "biome lint .",
-        "lint:fix": "biome lint . --apply",
+        "lint:fix": "biome lint . --write",
         "preview": "vite preview"
     },
     "dependencies": {

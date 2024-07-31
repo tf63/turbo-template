@@ -1,5 +1,5 @@
 {
-    "name": "with-tailwind",
+    "name": "turbo-template",
     "private": true,
     "scripts": {
         "build": "turbo build",

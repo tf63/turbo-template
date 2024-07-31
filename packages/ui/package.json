@@ -10,7 +10,7 @@
     "scripts": {
         "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
         "lint": "biome lint .",
-        "lint:fix": "biome lint . --apply",
+        "lint:fix": "biome lint . --write",
         "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
         "type-check": "tsc --noEmit"
     },

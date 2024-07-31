@@ -212,9 +212,6 @@ importers:
 
   apps/storybook:
     dependencies:
-      '@repo/next':
-        specifier: workspace:*
-        version: link:../next
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -234,9 +231,6 @@ importers:
       '@chromatic-com/storybook':
         specifier: ^1.4.0
         version: 1.6.1(react@18.3.1)
-      '@repo/config-tailwind':
-        specifier: workspace:*
-        version: link:../../packages/config-tailwind
       '@storybook/addon-a11y':
         specifier: ^8.1.1
         version: 8.2.6(storybook@8.2.6)

@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "tsc && vite build --watch",
         "lint": "biome lint .",
-        "lint:fix": "biome lint . --apply",
+        "lint:fix": "biome lint . --write",
         "preview": "vite preview"
     },
     "dependencies": {
