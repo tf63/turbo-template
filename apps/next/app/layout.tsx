@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import { Provider } from '@/app/provider'
+
 import './globals.css'
 import '@repo/ui/styles.css'
 
@@ -14,7 +16,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }): JSX.Element => {
     return (
         <html lang="ja">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <Provider>{children}</Provider>
+            </body>
         </html>
     )
 }
