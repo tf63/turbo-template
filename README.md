@@ -25,6 +25,7 @@ pnpm type-check # Check TypeScript types to ensure type correctness throughout y
 | [lint-staged](https://github.com/lint-staged/lint-staged) | Runs linters on Git staged files, improving code quality before commits    |
 | [plop](https://plopjs.com/)                               | Micro-generator framework that helps create consistent project components  |
 | [vitest](https://vitest.dev/)                             | Testing framework for unit test                                            |
+| [playwright](https://playwright.dev/)                     | Testing framework for e2e test                                             |
 
 ## Repos
 
