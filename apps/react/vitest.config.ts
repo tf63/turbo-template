@@ -7,17 +7,25 @@ export default defineConfig({
     test: {
         include: ['./src/**/*.{test,spec}.{ts,tsx}'],
         exclude: [
-            '**/*.stories.*',
             '**/node_modules/**',
             '**/dist/**',
-            '**/cypress/**',
-            '**/.{idea,git,cache,output,temp}/**',
+            '**/.{idea,git,cache,output,temp,next}/**',
+            '**/*.stories.*',
             '**/*.config.*',
+            '**/*.d.ts',
         ],
         coverage: {
             enabled: true,
             reportsDirectory: './src/test/coverage',
             reporter: ['text', 'json', 'html'],
+            exclude: [
+                '**/node_modules/**',
+                '**/dist/**',
+                '**/.{idea,git,cache,output,temp,next}/**',
+                '**/*.stories.*',
+                '**/*.config.*',
+                '**/*.d.ts',
+            ],
         },
         environment: 'jsdom',
         globals: true,
