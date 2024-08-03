@@ -8,7 +8,9 @@
         "lint:fix": "turbo lint:fix",
         "type-check": "turbo type-check",
         "clean": "turbo clean",
-        "format": "biome format . --write && prettier . --write ",
+        "test": "turbo test",
+        "test:watch": "turbo test:watch",
+        "format": "biome format . --write && prettier . --write",
         "prepare": "husky",
         "generate": "plop"
     },
@@ -17,7 +19,8 @@
         "husky": "^9.1.1",
         "lint-staged": "^15.2.7",
         "turbo": "^2.0.9",
-        "plop": "^4.0.1"
+        "plop": "^4.0.1",
+        "vitest": "^2.0.4"
     },
     "lint-staged": {
         "**.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": ["biome check --write"],

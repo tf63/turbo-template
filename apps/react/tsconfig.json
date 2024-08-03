@@ -5,7 +5,7 @@
             "@/*": ["./src/*"],
             "@ui/*": ["../../packages/ui/src/*"]
         },
-        "types": ["node"]
+        "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },
     "include": ["src"],
     "references": [{ "path": "./tsconfig.node.json" }]
