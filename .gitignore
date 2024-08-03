@@ -59,3 +59,9 @@ next-env.d.ts
 
 # vercel
 .vercel/
+
+# playwright
+test-results/
+blob-report/
+playwright-report/
+playwright/.cache/

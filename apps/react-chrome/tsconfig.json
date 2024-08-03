@@ -7,6 +7,6 @@
         },
         "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },
-    "include": ["src"],
+    "include": ["**/*.js", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "postcss.config.mjs"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
