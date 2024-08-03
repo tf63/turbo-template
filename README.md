@@ -24,6 +24,7 @@ pnpm type-check # Check TypeScript types to ensure type correctness throughout y
 | [husky](https://typicode.github.io/husky/)                | Tool for managing Git hooks easily                                         |
 | [lint-staged](https://github.com/lint-staged/lint-staged) | Runs linters on Git staged files, improving code quality before commits    |
 | [plop](https://plopjs.com/)                               | Micro-generator framework that helps create consistent project components  |
+| [vitest](https://vitest.dev/)                             | Testing framework for unit test                                            |
 
 ## Repos
 
