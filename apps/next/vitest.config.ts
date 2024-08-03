@@ -16,7 +16,7 @@ export default defineConfig({
         ],
         coverage: {
             enabled: true,
-            reportsDirectory: './test/coverage',
+            reportsDirectory: './test/unit/coverage',
             reporter: ['text', 'json', 'html'],
             exclude: [
                 '**/node_modules/**',
@@ -29,7 +29,7 @@ export default defineConfig({
         },
         environment: 'jsdom',
         globals: true,
-        setupFiles: ['./test/setup.ts'],
+        setupFiles: ['./test/unit/setup.ts'],
         alias: {
             '@': path.resolve(__dirname, './src'),
             '@ui': path.resolve(__dirname, '../../packages/ui/src'),
