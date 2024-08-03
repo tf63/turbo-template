@@ -4,23 +4,26 @@ import './index.css'
 import '@repo/ui/styles.css'
 
 import { SampleCard } from '@/features/sample-card'
+import { Provider } from '@/provider'
 import { Card } from '@ui/components/card'
 
 const Popup = () => {
     return (
-        <div className="min-h-screen w-full p-10">
-            <h1 className="text-xl bg-gray-300 p-5 rounded-lg">Popup</h1>
+        <Provider>
+            <div className="min-h-screen w-full p-10">
+                <h1 className="text-xl bg-gray-300 p-5 rounded-lg">Popup</h1>
 
-            <div className="my-5 w-60 space-y-3">
-                <p>Component</p>
-                <SampleCard />
-            </div>
+                <div className="my-5 w-60 space-y-3">
+                    <p>Component</p>
+                    <SampleCard />
+                </div>
 
-            <div className="my-5 w-60 space-y-3">
-                <p>Shared Component</p>
-                <Card />
+                <div className="my-5 w-60 space-y-3">
+                    <p>Shared Component</p>
+                    <Card />
+                </div>
             </div>
-        </div>
+        </Provider>
     )
 }
 
