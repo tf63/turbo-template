@@ -69,8 +69,6 @@
             "**/package-lock.json",
             "**/yarn.lock",
             "**/pnpm-lock.yaml",
-            "**/*.spec.*",
-            "**/*.test.*",
             "**/.DS_Store",
             "**/node_modules/**/*",
             "**/public/**/*",
