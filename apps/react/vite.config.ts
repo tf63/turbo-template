@@ -16,4 +16,20 @@ export default defineConfig({
             },
         ],
     },
+    build: {
+        rollupOptions: {
+            external: [
+                'node_modules',
+                'out',
+                '.next',
+                'bower_components',
+                'jspm_packages',
+                '**/*.stories.tsx',
+                '**/*.test.ts',
+                '**/*.test.tsx',
+                '**/*.spec.ts',
+                '**/*.spec.tsx',
+            ],
+        },
+    },
 })
