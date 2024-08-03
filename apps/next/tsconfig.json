@@ -5,7 +5,7 @@
             "@/*": ["./*"],
             "@ui/*": ["../../packages/ui/src/*"]
         },
-        "types": ["node"]
+        "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }

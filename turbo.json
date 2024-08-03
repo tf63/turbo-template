@@ -9,6 +9,12 @@
         "lint": {},
         "lint:fix": {},
         "type-check": {},
+        "test": {},
+        "test:watch": {
+            "cache": false,
+            "persistent": true
+        },
+        "test:ui": {},
         "dev": {
             "cache": false,
             "persistent": true
