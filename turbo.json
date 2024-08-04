@@ -8,14 +8,24 @@
         },
         "lint": {},
         "lint:fix": {},
-        "test": {},
+        "test": {
+            "outputs": ["test/unit/coverage"]
+        },
         "test:watch": {
-            "cache": false,
+            "persistent": true,
+            "outputs": ["test/unit/coverage"]
+        },
+        "test:ui": {
+            "persistent": true,
+            "outputs": ["test/unit/coverage"]
+        },
+        "test:e2e": {
+            "outputs": ["test-results", "playwright-report"]
+        },
+        "test:e2e:ui": {
+            "dependsOn": ["test:e2e"],
             "persistent": true
         },
-        "test:ui": {},
-        "test:e2e": {},
-        "test:e2e:ui": {},
         "dev": {
             "cache": false,
             "persistent": true
