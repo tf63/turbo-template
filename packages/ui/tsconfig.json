@@ -1,4 +1,10 @@
 {
     "extends": "@repo/config-typescript/tsconfig.react.json",
-    "include": ["."]
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
+    },
+    "include": ["src"]
 }
