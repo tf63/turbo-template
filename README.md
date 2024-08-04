@@ -3,14 +3,18 @@
 ## Commands
 
 ```shell
-pnpm dev        # Start the development server
-pnpm build      # Build the projects for production
-pnpm lint       # Lint the JavaScript/TypeScript files (not apply changes)
-pnpm lint:fix   # Lint the JavaScript/TypeScript files (apply changes)
-pnpm format     # Format the JavaScript/TypeScript files using Biome and other files using Prettier.
-pnpm generate   # Generate a component from templates with plop
-pnpm clean      # Remove build artifacts and other generated files
-pnpm type-check # Check TypeScript types to ensure type correctness throughout your codebase
+pnpm build       # Build the projects for production
+pnpm dev         # Start the development server
+pnpm lint        # Lint the JavaScript/TypeScript files (not apply changes)
+pnpm lint:fix    # Lint the JavaScript/TypeScript files (apply changes)
+pnpm test        # Run the unit test
+pnpm test:watch  # Run the unit test in watch mode
+pnpm test:ui     # Run the unit test with UI
+pnpm test:e2e    # Run the end-to-end tests
+pnpm test:e2e:ui # Run the end-to-end tests with UI
+pnpm format      # Format the JavaScript/TypeScript files using Biome and other files using Prettier.
+pnpm generate    # Generate a component from templates with plop
+pnpm clean       # Remove build artifacts and other generated files
 ```
 
 ## DevTools

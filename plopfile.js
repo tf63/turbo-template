@@ -3,14 +3,14 @@ const path = require('path')
 module.exports = (plop) => {
     plop.setHelper('extractFilename', (filePath) => path.basename(filePath))
     plop.setGenerator('component', {
-        // オプション名になる
         description: 'Create a new component',
         prompts: [
             {
                 type: 'list',
                 name: 'repo',
                 message: 'Please select the repository name',
-                // appsのパスはプロジェクトに応じて選択肢に追加する
+
+                // Add the path to the apps to the options according to the project
                 choices: [
                     'packages/ui/src/components',
                     'apps/next/features',
