@@ -7,8 +7,6 @@
     },
     "private": true,
     "devDependencies": {
-        "@repo/config-typescript": "workspace:*",
-        "tailwindcss": "^3.4.1",
-        "postcss": "^8.4.35"
+        "@repo/config-typescript": "workspace:*"
     }
 }

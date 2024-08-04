@@ -8,7 +8,6 @@
         },
         "lint": {},
         "lint:fix": {},
-        "type-check": {},
         "test": {},
         "test:watch": {
             "cache": false,
@@ -20,9 +19,6 @@
         "dev": {
             "cache": false,
             "persistent": true
-        },
-        "clean": {
-            "cache": false
         }
     }
 }
