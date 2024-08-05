@@ -1,8 +1,10 @@
 # Turborepo Template
 
+This repository provides a monorepo setup for web frontend development (React 18, Next.js 14, Chrome extension)
+
 ## Commands
 
-```shell
+```
 pnpm build       # Build the projects for production
 pnpm dev         # Start the development server
 pnpm lint        # Lint the JavaScript/TypeScript files (not apply changes)
@@ -31,7 +33,7 @@ pnpm clean       # Remove build artifacts and other generated files
 | [vitest](https://vitest.dev/)                             | Testing framework for unit test                                            |
 | [playwright](https://playwright.dev/)                     | Testing framework for e2e test                                             |
 
-## Repos
+## Repositorys
 
 ### apps
 
