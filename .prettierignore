@@ -36,10 +36,14 @@
 **/dist/**/*
 **/dist-ssr/**/*
 **/build/**/*
+**/storybook-static/**/*
 **/coverage/**/*
 **/bin/**/*
 **/obj/**/*
 **/out/**/*
 **/.yarn/**/*
+**/.pnpm-store/**/*
 **/.next/**/*
 **/.vercel/**/*
+**/.swc/**/*
+**/.turbo/**/*
