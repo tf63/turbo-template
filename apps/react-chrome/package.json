@@ -4,8 +4,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "tsc -b && vite build",
-        "dev": "tsc && vite build --watch",
+        "build": "tsc --noEmit && vite build",
+        "dev": "tsc --noEmit && vite build --watch",
         "lint": "biome lint .",
         "lint:fix": "biome lint . --write",
         "test": "vitest run",
