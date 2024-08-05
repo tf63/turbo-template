@@ -12,7 +12,7 @@
         "test:watch": "vitest watch",
         "test:ui": "vitest watch --ui",
         "test:e2e": "playwright test",
-        "test:e2e:ui": "playwright show-report"
+        "test:e2e:ui": "playwright show-report --port 0"
     },
     "dependencies": {
         "@repo/ui": "workspace:*",
