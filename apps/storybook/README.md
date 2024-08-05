@@ -2,14 +2,42 @@
 
 [Storybook Official Site](https://storybook.js.org/) [[GitHub](https://github.com/storybookjs/storybook)]
 
-## Commands
+## Getting Started
 
-```shell
-pnpm dev       # start the storybook server on 6006
-pnpm build     # build the storybook
-pnpm lint      # lint story files (not apply changes)
-pnpm lint:fix  # lint story files (apply changes)
+To get started with this Storybook application, follow these steps:
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+-   Node.js (v20.11.0)
+-   pnpm (v8.15.6)
+
+### Installation
+
 ```
+pnpm i
+```
+
+### Development
+
+To start the development server with hot reload enabled, run:
+
+```
+pnpm dev
+```
+
+The server will start at `localhost:6006`
+
+### Building
+
+To build the application for production, run:
+
+```
+pnpm build
+```
+
+The build will be output to the `storybook-static/` directory.
 
 ## Addon
 
