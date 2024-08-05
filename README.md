@@ -2,7 +2,7 @@
 
 ## Commands
 
-```shell
+```
 pnpm build       # Build the projects for production
 pnpm dev         # Start the development server
 pnpm lint        # Lint the JavaScript/TypeScript files (not apply changes)
