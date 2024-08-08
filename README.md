@@ -16,7 +16,6 @@ pnpm test:e2e    # Run the end-to-end tests
 pnpm test:e2e:ui # Run the end-to-end tests with UI
 pnpm format      # Format the JavaScript/TypeScript files using Biome and other files using Prettier.
 pnpm generate    # Generate a component from templates with plop
-pnpm clean       # Remove build artifacts and other generated files
 ```
 
 ## DevTools
