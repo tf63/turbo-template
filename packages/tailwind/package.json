@@ -8,6 +8,7 @@
         "./styles.css": "./dist/index.css"
     },
     "scripts": {
+        "predev": "rm -rf dist/",
         "dev": "tailwindcss -i ./styles.css -o ./dist/index.css --watch"
     },
     "devDependencies": {
