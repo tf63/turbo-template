@@ -1,3 +1,4 @@
+import path from 'node:path'
 import type { StorybookConfig } from '@storybook/nextjs'
 
 const config: StorybookConfig = {
@@ -16,6 +17,15 @@ const config: StorybookConfig = {
     framework: {
         name: '@storybook/nextjs',
         options: {},
+    },
+    webpackFinal: (config) => {
+        if (config.resolve) {
+            config.resolve.alias = {
+                ...config.resolve.alias,
+                '@ui': path.resolve(__dirname, '../../../packages/ui/src'),
+            }
+        }
+        return config
     },
 }
 
