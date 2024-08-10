@@ -1,5 +1,5 @@
 {
-    "extends": "@repo/config-typescript/tsconfig.react.json",
+    "extends": "@repo/typescript/tsconfig.react.json",
     "compilerOptions": {
         "paths": {
             "@/*": ["./src/*"],

@@ -1,5 +1,5 @@
 {
-    "extends": "@repo/config-typescript/tsconfig.next.json",
+    "extends": "@repo/typescript/tsconfig.next.json",
     "compilerOptions": {
         "paths": {
             "@/*": ["./*"],

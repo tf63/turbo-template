@@ -1,0 +1,17 @@
+{
+    "name": "@repo/tailwind",
+    "version": "0.0.0",
+    "private": true,
+    "exports": {
+        "./tailwind": "./tailwind.config.ts",
+        "./postcss": "./postcss.config.mjs",
+        "./styles.css": "./dist/index.css"
+    },
+    "scripts": {
+        "dev": "tailwindcss -i ./styles.css -o ./dist/index.css --watch"
+    },
+    "devDependencies": {
+        "@repo/typescript": "workspace:*",
+        "daisyui": "^4.12.10"
+    }
+}

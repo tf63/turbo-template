@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 type SampleCardType = typeof SampleCard
 
 export default {
-    title: 'SampleCard',
+    title: 'Chrome/SampleCard',
     component: SampleCard,
 } satisfies Meta<SampleCardType>
 

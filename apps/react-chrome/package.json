@@ -22,8 +22,8 @@
         "tailwind-merge": "^2.4.0"
     },
     "devDependencies": {
-        "@repo/config-tailwind": "workspace:*",
-        "@repo/config-typescript": "workspace:*",
+        "@repo/tailwind": "workspace:*",
+        "@repo/typescript": "workspace:*",
         "@types/chrome": "^0.0.269",
         "@crxjs/vite-plugin": "2.0.0-beta.25"
     }
