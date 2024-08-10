@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
-import '@repo/ui/styles.css'
 import { Provider } from '@/provider.tsx'
 
 // biome-ignore lint/style/noNonNullAssertion: <explanation>

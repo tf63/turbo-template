@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import '@repo/ui/styles.css'
+
 import { SampleCard } from '@/features/sample-card'
 import { Provider } from '@/provider'
 import { Card } from '@ui/components/card'

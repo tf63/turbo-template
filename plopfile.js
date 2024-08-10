@@ -21,7 +21,7 @@ module.exports = (plop) => {
             {
                 type: 'input',
                 name: 'path',
-                message: 'Please enter the component path (e.g. components/button)',
+                message: 'Please enter the component path (e.g. layout/nav-sidebar)',
             },
         ],
         actions: [
