@@ -1,34 +1,8 @@
 {
     "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
     "formatter": {
-        "enabled": true,
-        "formatWithErrors": false,
-        "indentStyle": "space",
-        "indentWidth": 4,
-        "lineEnding": "lf",
-        "lineWidth": 119,
-        "attributePosition": "auto",
-        "ignore": [
-            "**/package-lock.json",
-            "**/yarn.lock",
-            "**/pnpm-lock.yaml",
-            "**/.DS_Store",
-            "**/node_modules/**/*",
-            "**/public/**/*",
-            "**/dist/**/*",
-            "**/dist-ssr/**/*",
-            "**/build/**/*",
-            "**/coverage/**/*",
-            "**/bin/**/*",
-            "**/obj/**/*",
-            "**/out/**/*",
-            "**/.yarn/**/*",
-            "**/.next/**/*",
-            "**/.vercel/**/*",
-            "**/*.mdx"
-        ]
+        "enabled": false
     },
-    "organizeImports": { "enabled": true },
     "linter": {
         "enabled": true,
         "rules": {
@@ -84,19 +58,6 @@
             "**/.vercel/**/*",
             "**/*.mdx"
         ]
-    },
-    "javascript": {
-        "formatter": {
-            "jsxQuoteStyle": "double",
-            "quoteProperties": "asNeeded",
-            "trailingCommas": "es5",
-            "semicolons": "asNeeded",
-            "arrowParentheses": "always",
-            "bracketSpacing": true,
-            "bracketSameLine": false,
-            "quoteStyle": "single",
-            "attributePosition": "auto"
-        }
     },
     "json": {
         "parser": {
