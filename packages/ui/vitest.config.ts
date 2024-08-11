@@ -33,7 +33,7 @@ export default defineConfig({
         globals: true,
         setupFiles: ['./src/test/unit/setup.ts'],
         alias: {
-            '@': path.resolve(__dirname, './src')
+            '@repo/ui': path.resolve(__dirname, './src')
         }
     }
 })
