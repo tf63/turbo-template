@@ -4,5 +4,28 @@
     "singleQuote": true,
     "trailingComma": "none",
     "semi": false,
-    "htmlWhitespaceSensitivity": "css"
+    "htmlWhitespaceSensitivity": "css",
+    "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+    "tailwindFunctions": ["clsx"],
+    "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy", "classProperties"],
+    "importOrderTypeScriptVersion": "5.3.3",
+    "importOrder": [
+        "<BUILTIN_MODULES>",
+        "",
+        "<THIRD_PARTY_MODULES>",
+        "",
+        "^@/features$",
+        "^@/features/(.*)$",
+        "",
+        "^@/hooks$",
+        "^@/hooks/(.*)$",
+        "",
+        "",
+        "^@/utils$",
+        "^@/utils/(.*)$",
+        "",
+        "^@/css/(.*)$",
+        "",
+        "^[.]"
+    ]
 }
