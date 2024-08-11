@@ -1,5 +1,5 @@
 type CardProps = object
 
 export const Card = ({}: CardProps) => {
-    return <div className="p-5 rounded-xl w-full text-center bg-indigo-300">Card Component</div>
+    return <div className="w-full rounded-xl bg-indigo-300 p-5 text-center">Card Component</div>
 }

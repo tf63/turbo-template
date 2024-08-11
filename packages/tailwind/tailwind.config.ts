@@ -6,11 +6,11 @@ const config: Config = {
         '../../apps/next/features/**/*.{js,ts,jsx,tsx,mdx}',
         '../../apps/react/src/features/**/*.{js,ts,jsx,tsx,mdx}',
         '../../apps/react-chrome/src/features/**/*.{js,ts,jsx,tsx,mdx}',
-        '../../packages/ui/src/**/*.{js,ts,jsx,tsx,mdx}',
+        '../../packages/ui/src/**/*.{js,ts,jsx,tsx,mdx}'
     ],
     theme: {
-        extend: {},
+        extend: {}
     },
-    plugins: [],
+    plugins: []
 }
 export default config

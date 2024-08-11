@@ -3,8 +3,8 @@ const nextConfig = {
     reactStrictMode: true,
     transpilePackages: ['@repo/ui'],
     typescript: {
-        tsconfigPath: 'tsconfig.build.json',
-    },
+        tsconfigPath: 'tsconfig.build.json'
+    }
 }
 
 export default nextConfig

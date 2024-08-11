@@ -1,4 +1,5 @@
 import path from 'node:path'
+
 import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vitest/config'
 
@@ -13,7 +14,7 @@ export default defineConfig({
             '**/.{idea,git,cache,output,temp,next}/**',
             '**/*.stories.*',
             '**/*.config.*',
-            '**/*.d.ts',
+            '**/*.d.ts'
         ],
         coverage: {
             enabled: true,
@@ -25,14 +26,14 @@ export default defineConfig({
                 '**/.{idea,git,cache,output,temp,next}/**',
                 '**/*.stories.*',
                 '**/*.config.*',
-                '**/*.d.ts',
-            ],
+                '**/*.d.ts'
+            ]
         },
         environment: 'jsdom',
         globals: true,
         setupFiles: ['./src/test/unit/setup.ts'],
         alias: {
-            '@': path.resolve(__dirname, './src'),
-        },
-    },
+            '@': path.resolve(__dirname, './src')
+        }
+    }
 })

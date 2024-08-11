@@ -16,7 +16,7 @@ const removeUseClient = () => {
             const newCode = code.replace(/['"]use client['"];\s*/g, '')
 
             return { code: newCode, map: null }
-        },
+        }
     }
 }
 
@@ -24,16 +24,16 @@ const removeUseClient = () => {
 export default defineConfig({
     plugins: [react(), removeUseClient()],
     server: {
-        host: true,
+        host: true
     },
     resolve: {
         alias: [
             { find: '@/', replacement: `${__dirname}/src/` },
             {
                 find: '@ui/',
-                replacement: `${__dirname}/../../packages/ui/src/`,
-            },
-        ],
+                replacement: `${__dirname}/../../packages/ui/src/`
+            }
+        ]
     },
     build: {
         rollupOptions: {
@@ -47,8 +47,8 @@ export default defineConfig({
                 '**/*.test.ts',
                 '**/*.test.tsx',
                 '**/*.spec.ts',
-                '**/*.spec.tsx',
-            ],
-        },
-    },
+                '**/*.spec.tsx'
+            ]
+        }
+    }
 })
