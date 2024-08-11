@@ -3,9 +3,11 @@
 [Tailwind CSS](https://tailwindcss.com/) and PostCSS configuration shared across applications
 
 -   Contains generic styles and animations
--   Does not include packages with dependencies, such as daisyUI
+-   Builds the Tailwind classes included in the repository and compile them into `dist/index.css`
+-   `dist/index.css` is exported as `@repo/tailwind/styles.css`
 
-| package                          | description        |
-| -------------------------------- | ------------------ |
-| `@repo/config-tailwind/tailwind` | tailwind.config.ts |
-| `@repo/config-tailwind/postcss`  | postcss.config.mjs |
+| package                     | description        |
+| --------------------------- | ------------------ |
+| `@repo/tailwind/tailwind`   | tailwind.config.ts |
+| `@repo/tailwind/postcss`    | postcss.config.mjs |
+| `@repo/tailwind/styles.css` | `dist/index.css`   |

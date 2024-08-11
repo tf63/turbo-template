@@ -24,8 +24,8 @@ pnpm generate    # Generate a component from templates with plop
 | --------------------------------------------------------- | -------------------------------------------------------------------------- |
 | [turbo](https://turbo.build)                              | Monorepo build system that speeds up and optimizes the development process |
 | [pnpm](https://pnpm.io)                                   | Fast, disk space efficient package manager                                 |
-| [biome](https://biomejs.dev/)                             | Linter & formatter for JavaScript, TypeScript, and JSON files              |
-| [prettier](https://prettier.io/)                          | Formatter for various file types (Markdown, CSS, etc.)                     |
+| [biome](https://biomejs.dev/)                             | Linter for JavaScript, TypeScript, and JSON files                          |
+| [prettier](https://prettier.io/)                          | Formatter for various file types (JavaScript, TypeScript, Markdown, etc.)  |
 | [husky](https://typicode.github.io/husky/)                | Tool for managing Git hooks easily                                         |
 | [lint-staged](https://github.com/lint-staged/lint-staged) | Runs linters on Git staged files, improving code quality before commits    |
 | [plop](https://plopjs.com/)                               | Micro-generator framework that helps create consistent project components  |
