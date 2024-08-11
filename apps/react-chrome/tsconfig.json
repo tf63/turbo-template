@@ -3,7 +3,7 @@
     "compilerOptions": {
         "paths": {
             "@repo/react-chrome/*": ["./src/*"],
-            "@ui/*": ["../../packages/ui/src/*"]
+            "@repo/ui/*": ["../../packages/ui/src/*"]
         },
         "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },

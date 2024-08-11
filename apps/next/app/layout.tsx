@@ -1,8 +1,9 @@
-import { Provider } from '@/app/provider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import './globals.css'
+
+import { Provider } from '@repo/next/app/provider'
 
 const inter = Inter({ subsets: ['latin'] })
 

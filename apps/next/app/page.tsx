@@ -1,5 +1,6 @@
+import { Card } from '@repo/ui/components/card'
+
 import { SampleCard } from '@repo/next/features/sample-card'
-import { Card } from '@ui/components/card'
 
 const Page = (): JSX.Element => {
     return (

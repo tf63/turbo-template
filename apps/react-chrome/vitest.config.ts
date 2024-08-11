@@ -34,7 +34,7 @@ export default defineConfig({
         setupFiles: ['./src/test/unit/setup.ts'],
         alias: {
             '@repo/react-chrome/': path.resolve(__dirname, './src'),
-            '@ui': path.resolve(__dirname, '../../packages/ui/src')
+            '@repo/ui': path.resolve(__dirname, '../../packages/ui/src')
         }
     }
 })

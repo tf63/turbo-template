@@ -42,7 +42,7 @@ export default defineConfig({
         alias: [
             { find: '@repo/react-chrome/', replacement: `${__dirname}/src/` },
             {
-                find: '@ui/',
+                find: '@repo/ui/',
                 replacement: `${__dirname}/../../packages/ui/src/`
             }
         ]
