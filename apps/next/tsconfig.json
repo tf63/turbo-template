@@ -2,8 +2,8 @@
     "extends": "@repo/typescript/tsconfig.next.json",
     "compilerOptions": {
         "paths": {
-            "@/*": ["./*"],
-            "@ui/*": ["../../packages/ui/src/*"]
+            "@repo/next/*": ["./*"],
+            "@repo/ui/*": ["../../packages/ui/src/*"]
         },
         "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },

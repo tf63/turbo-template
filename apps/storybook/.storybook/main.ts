@@ -32,7 +32,10 @@ const config: StorybookConfig = {
         if (config.resolve) {
             config.resolve.alias = {
                 ...config.resolve.alias,
-                '@ui': path.resolve(__dirname, '../../../packages/ui/src')
+                '@repo/next': path.resolve(__dirname, '../../../apps/next/'),
+                '@repo/react': path.resolve(__dirname, '../../../apps/react/src'),
+                '@repo/react-chrome': path.resolve(__dirname, '../../../apps/react-chrome/src'),
+                '@repo/ui': path.resolve(__dirname, '../../../packages/ui/src')
             }
         }
         return config

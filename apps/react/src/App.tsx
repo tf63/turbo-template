@@ -1,6 +1,6 @@
-import { Card } from '@ui/components/card'
+import { Card } from '@repo/ui/components/card'
 
-import { SampleCard } from '@/features/sample-card'
+import { SampleCard } from '@repo/react/features/sample-card'
 
 const App = () => {
     return (

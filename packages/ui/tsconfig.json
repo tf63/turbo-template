@@ -2,7 +2,7 @@
     "extends": "@repo/typescript/tsconfig.react.json",
     "compilerOptions": {
         "paths": {
-            "@ui/*": ["./src/*"]
+            "@repo/ui/*": ["./src/*"]
         },
         "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },
