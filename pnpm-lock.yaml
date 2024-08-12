@@ -114,8 +114,8 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
       tailwind-merge:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.5.0
+        version: 2.5.0
     devDependencies:
       '@repo/tailwind':
         specifier: workspace:*
@@ -139,8 +139,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       tailwind-merge:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.5.0
+        version: 2.5.0
     devDependencies:
       '@repo/tailwind':
         specifier: workspace:*
@@ -164,8 +164,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       tailwind-merge:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.5.0
+        version: 2.5.0
     devDependencies:
       '@crxjs/vite-plugin':
         specifier: 2.0.0-beta.25
@@ -204,6 +204,7 @@ importers:
       '@storybook/addon-console':
         specifier: ^3.0.0
         version: 3.0.0(@storybook/addon-actions@8.2.8)(react@18.3.1)
+        version: 3.0.0(@storybook/addon-actions@8.2.8)(react@18.3.1)
       '@storybook/addon-essentials':
         specifier: ^8.2.8
         version: 8.2.8(storybook@8.2.8)
@@ -230,6 +231,7 @@ importers:
         version: link:../typescript
       daisyui:
         specifier: ^4.12.10
+        version: 4.12.10(postcss@8.4.41)
         version: 4.12.10(postcss@8.4.41)
 
   packages/typescript: {}
@@ -2649,6 +2651,7 @@ packages:
     dev: true
 
   /@storybook/addon-console@3.0.0(@storybook/addon-actions@8.2.8)(react@18.3.1):
+  /@storybook/addon-console@3.0.0(@storybook/addon-actions@8.2.8)(react@18.3.1):
     resolution: {integrity: sha512-2pD2c9KNWuPIWlprqmWoZYrNQnG2qoDg7fAAXXNK6YDc5x/ZpK0cfOyfz/Gpdeje4QUmttZKAVjH0nOZDuxfvw==}
     peerDependencies:
       '@storybook/addon-actions': '*'
@@ -2863,6 +2866,7 @@ packages:
       process: 0.11.10
       semver: 7.6.3
       storybook: 8.2.8
+      storybook: 8.2.8
       style-loader: 3.3.4(webpack@5.93.0)
       terser-webpack-plugin: 5.3.10(webpack@5.93.0)
       ts-dedent: 2.2.0
@@ -2911,6 +2915,7 @@ packages:
       storybook: ^8.2.8
     dependencies:
       storybook: 8.2.8
+      storybook: 8.2.8
     dev: true
 
   /@storybook/core-webpack@8.2.8(storybook@8.2.8):
@@ -2918,6 +2923,8 @@ packages:
     peerDependencies:
       storybook: ^8.2.8
     dependencies:
+      '@types/node': 18.19.43
+      storybook: 8.2.8
       '@types/node': 18.19.44
       storybook: 8.2.8
       ts-dedent: 2.2.0
@@ -2990,6 +2997,7 @@ packages:
       storybook: ^8.2.8
     dependencies:
       storybook: 8.2.8
+      storybook: 8.2.8
     dev: true
 
   /@storybook/nextjs@8.2.8(next@14.2.5)(react-dom@18.3.1)(react@18.3.1)(storybook@8.2.8)(typescript@5.5.4)(vitest@2.0.5)(webpack@5.93.0):
@@ -3045,6 +3053,7 @@ packages:
       resolve-url-loader: 5.0.0
       sass-loader: 12.6.0(webpack@5.93.0)
       semver: 7.6.3
+      storybook: 8.2.8
       storybook: 8.2.8
       style-loader: 3.3.4(webpack@5.93.0)
       styled-jsx: 5.1.1(@babel/core@7.25.2)(react@18.3.1)
@@ -3106,6 +3115,7 @@ packages:
       resolve: 1.22.8
       semver: 7.6.3
       storybook: 8.2.8
+      storybook: 8.2.8
       tsconfig-paths: 4.2.0
       typescript: 5.5.4
       webpack: 5.93.0
@@ -3122,6 +3132,7 @@ packages:
     peerDependencies:
       storybook: ^8.2.8
     dependencies:
+      storybook: 8.2.8
       storybook: 8.2.8
     dev: true
 
@@ -3189,6 +3200,7 @@ packages:
       react-element-to-jsx-string: 15.0.0(react-dom@18.3.1)(react@18.3.1)
       semver: 7.6.3
       storybook: 8.2.8
+      storybook: 8.2.8
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       typescript: 5.5.4
@@ -3234,6 +3246,7 @@ packages:
     peerDependencies:
       storybook: ^8.2.8
     dependencies:
+      storybook: 8.2.8
       storybook: 8.2.8
     dev: true
 
@@ -5192,12 +5205,14 @@ packages:
     dev: true
 
   /daisyui@4.12.10(postcss@8.4.41):
+  /daisyui@4.12.10(postcss@8.4.41):
     resolution: {integrity: sha512-jp1RAuzbHhGdXmn957Z2XsTZStXGHzFfF0FgIOZj3Wv9sH7OZgLfXTRZNfKVYxltGUOBsG1kbWAdF5SrqjebvA==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
       picocolors: 1.0.1
+      postcss-js: 4.0.1(postcss@8.4.41)
       postcss-js: 4.0.1(postcss@8.4.41)
     transitivePeerDependencies:
       - postcss
@@ -9596,8 +9611,8 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
 
-  /tailwind-merge@2.4.0:
-    resolution: {integrity: sha512-49AwoOQNKdqKPd9CViyH5wJoSKsCDjUlzL8DxuGp3P1FsGY36NJDAa18jLZcaHAUUuTj+JB8IAo8zWgBNvBF7A==}
+  /tailwind-merge@2.5.0:
+    resolution: {integrity: sha512-a6Q/isR5XAo9IR7Hjh80BQDkn8PG9ONJpSO/U3vGzdKyKG125lPHNXdiPfeQ5X0EOG0qKlS/0qnxdBYkLlD6tA==}
     dev: false
 
   /tailwindcss@3.4.9:
