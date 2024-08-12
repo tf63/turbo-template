@@ -1,7 +1,8 @@
-const path = require('path')
+import path from 'node:path'
 
-module.exports = (plop) => {
+export default (plop) => {
     plop.setHelper('extractFilename', (filePath) => path.basename(filePath))
+
     plop.setGenerator('component', {
         description: 'Create a new component',
         prompts: [
