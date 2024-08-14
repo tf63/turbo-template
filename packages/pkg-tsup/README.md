@@ -1,5 +1,7 @@
 # pkg-tsup
 
+This is a template for creating npm packages that use [Tsup](https://tsup.egoist.dev/) to build TypeScript projects efficiently.
+
 If you want to publish this package to npm, make sure your package.json includes the following configuration:
 
 ```package.json

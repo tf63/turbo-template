@@ -4,6 +4,8 @@ This repository provides a monorepo setup for web frontend development (React 18
 
 ## Commands
 
+The following commands are available:
+
 ```
 pnpm build       # Build the projects for production
 pnpm dev         # Start the development server
@@ -20,24 +22,24 @@ pnpm generate    # Generate a component from templates with plop
 
 ## DevTools
 
-| tool                                                      | description                                                                |
+This repository utilizes the following tools:
+| tool | description |
 | --------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [turbo](https://turbo.build)                              | Monorepo build system that speeds up and optimizes the development process |
-| [pnpm](https://pnpm.io)                                   | Fast, disk space efficient package manager                                 |
-| [biome](https://biomejs.dev/)                             | Linter for JavaScript, TypeScript, and JSON files                          |
-| [prettier](https://prettier.io/)                          | Formatter for various file types (JavaScript, TypeScript, Markdown, etc.)  |
-| [husky](https://typicode.github.io/husky/)                | Tool for managing Git hooks easily                                         |
-| [lint-staged](https://github.com/lint-staged/lint-staged) | Runs linters on Git staged files, improving code quality before commits    |
-| [plop](https://plopjs.com/)                               | Micro-generator framework that helps create consistent project components  |
-| [vitest](https://vitest.dev/)                             | Testing framework for unit test                                            |
-| [playwright](https://playwright.dev/)                     | Testing framework for e2e test                                             |
+| [turbo](https://turbo.build) | Monorepo build system that speeds up and optimizes the development process |
+| [pnpm](https://pnpm.io) | Fast, disk space efficient package manager |
+| [biome](https://biomejs.dev/) | Linter for JavaScript, TypeScript, and JSON files |
+| [prettier](https://prettier.io/) | Formatter for various file types (JavaScript, TypeScript, Markdown, etc.) |
+| [husky](https://typicode.github.io/husky/) | Tool for managing Git hooks easily |
+| [lint-staged](https://github.com/lint-staged/lint-staged) | Runs linters on Git staged files, improving code quality before commits |
+| [plop](https://plopjs.com/) | Micro-generator framework that helps create consistent project components |
+| [vitest](https://vitest.dev/) | Testing framework for unit testing |
+| [playwright](https://playwright.dev/) | Testing framework for e2e testing |
 
 ## Repositories
 
 ### apps
 
-`apps` contains web applications.
-Each application in `apps/` only depends on packages within `packages/`, not on other applications.
+`apps` contains web applications that depend only on packages within the `packages/` directory, not on other applications.
 
 | repo             | description                                                                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -48,10 +50,12 @@ Each application in `apps/` only depends on packages within `packages/`, not on 
 
 ### packages
 
-`packages` contains reusable UI components and configuration files.
+`packages` contains shared libraries and configuration files that are reusable across multiple projects.
 
-| repo                  | description                                                                       |
-| --------------------- | --------------------------------------------------------------------------------- |
-| **ui**                | Shared UI components library used across applications                             |
-| **config-tailwind**   | [Tailwind CSS](https://tailwindcss.com/) configuration shared across applications |
-| **config-typescript** | TypeScript configuration shared across applications                               |
+| repo           | description                                                                              |
+| -------------- | ---------------------------------------------------------------------------------------- |
+| **ui**         | Shared UI components library used across applications                                    |
+| **tailwind**   | [Tailwind CSS](https://tailwindcss.com/) configuration shared across applications        |
+| **typescript** | TypeScript configuration shared across applications                                      |
+| **pkg-tsup**   | Template for creating npm packages using [Tsup](https://tsup.egoist.dev/) as the bundler |
+| **pkg-vite**   | Template for creating npm packages using [Vite](https://vitejs.dev/) as the bundler      |
