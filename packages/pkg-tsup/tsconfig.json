@@ -1,0 +1,14 @@
+{
+    "extends": ["@repo/typescript/tsconfig.base.json"],
+    "compilerOptions": {
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "paths": {
+            "@repo/tsup/*": ["./src/*"]
+        },
+        "types": ["node", "vitest/globals"]
+    },
+    "include": ["src"]
+}
