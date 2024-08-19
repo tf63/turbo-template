@@ -6,6 +6,7 @@
     "license": "MIT",
     "scripts": {
         "dev": "pnpm build:fast -- --watch",
+        "prebuild": "rm -rf dist/",
         "build": "tsup src --dts",
         "build:fast": "tsup src"
     },

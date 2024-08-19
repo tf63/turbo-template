@@ -9,7 +9,9 @@
     },
     "scripts": {
         "predev": "rm -rf dist/",
-        "dev": "tailwindcss -i ./styles.css -o ./dist/index.css --watch"
+        "dev": "tailwindcss -i ./styles.css -o ./dist/index.css --watch",
+        "prebuild": "rm -rf dist/",
+        "build": "tailwindcss -i ./styles.css -o ./dist/index.css"
     },
     "devDependencies": {
         "@repo/typescript": "workspace:*",
