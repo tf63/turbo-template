@@ -12,8 +12,10 @@
         "./*": "./src/*"
     },
     "scripts": {
-        "build": "tailwindcss -i ./src/styles/styles.css -o ./dist/index.css",
+        "predev": "rm -rf dist/",
         "dev": "tailwindcss -i ./src/styles/styles.css -o ./dist/index.css --watch",
+        "prebuild": "rm -rf dist/",
+        "build": "tailwindcss -i ./src/styles/styles.css -o ./dist/index.css",
         "lint": "biome lint .",
         "lint:fix": "biome lint . --write",
         "test": "vitest run",

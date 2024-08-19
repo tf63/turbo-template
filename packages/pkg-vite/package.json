@@ -6,6 +6,7 @@
     "license": "MIT",
     "scripts": {
         "dev": "vite build --watch",
+        "prebuild": "rm -rf dist/",
         "build": "vite build && tsc"
     },
     "files": [

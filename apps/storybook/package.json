@@ -3,8 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "build": "storybook build",
         "dev": "storybook dev -p 6006",
+        "prebuild": "rm -rf storybook-static/",
+        "build": "storybook build",
         "lint": "biome lint .",
         "lint:fix": "biome lint . --write"
     },
