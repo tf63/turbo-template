@@ -3,7 +3,14 @@ import sharedConfig from '@repo/tailwind/tailwind'
 import type { Config } from 'tailwindcss'
 
 const config: Pick<Config, 'content' | 'presets'> = {
-    content: ['**/*.{js,ts,jsx,tsx,mdx}', '../../packages/ui/**/*.{js,ts,jsx,tsx,mdx}', '!**/*.stories.*'],
+    content: [
+        'app/*.{jsx,tsx,mdx}',
+        '!app/*.stories.*',
+        'features/*.{jsx,tsx,mdx}',
+        '!features/*.stories.*',
+        '../../packages/ui/**/*.{jsx,tsx,mdx}',
+        '!../../packages/ui/**/*.stories.*'
+    ],
     presets: [sharedConfig]
 }
 
