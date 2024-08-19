@@ -16,13 +16,13 @@
     "devDependencies": {
         "@repo/tailwind": "workspace:*",
         "@chromatic-com/storybook": "^1.4.0",
-        "@storybook/addon-essentials": "^8.2.8",
-        "@storybook/addon-a11y": "^8.2.8",
-        "@storybook/addon-interactions": "^8.2.8",
-        "@storybook/addon-links": "^8.2.8",
-        "@storybook/addon-storysource": "^8.2.8",
+        "@storybook/addon-essentials": "^8.2.9",
+        "@storybook/addon-a11y": "^8.2.9",
+        "@storybook/addon-interactions": "^8.2.9",
+        "@storybook/addon-links": "^8.2.9",
+        "@storybook/addon-storysource": "^8.2.9",
         "@storybook/addon-console": "^3.0.0",
         "@whitespace/storybook-addon-html": "^6.1.1",
-        "storybook": "^8.2.8"
+        "storybook": "^8.2.9"
     }
 }

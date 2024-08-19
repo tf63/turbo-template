@@ -24,7 +24,7 @@
     "devDependencies": {
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*",
-        "@types/chrome": "^0.0.269",
+        "@types/chrome": "^0.0.270",
         "@crxjs/vite-plugin": "2.0.0-beta.25"
     }
 }
