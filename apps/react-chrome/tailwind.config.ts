@@ -4,9 +4,10 @@ import type { Config } from 'tailwindcss'
 
 const config: Pick<Config, 'content' | 'presets'> = {
     content: [
-        './src/**/*.{js,ts,jsx,tsx,mdx}',
-        '../../packages/ui/src/**/*.{js,ts,jsx,tsx,mdx}',
-        '!./src/**/*.stories.*'
+        './src/**/*.{jsx,tsx,mdx}',
+        '!./src/**/*.stories.*',
+        '../../packages/ui/src/**/*.{jsx,tsx,mdx}',
+        '!../../packages/ui/**/*.stories.*'
     ],
     presets: [sharedConfig]
 }
