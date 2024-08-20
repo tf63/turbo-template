@@ -9,10 +9,10 @@ const config: StorybookConfig = {
         '../../../packages/ui/src/**/*.mdx',
         '../../../apps/next/src/**/*.stories.*',
         '../../../apps/next/src/**/*.mdx',
-        '../../../apps/react/**/*.stories.*',
-        '../../../apps/react/**/*.mdx',
-        '../../../apps/react-chrome/**/*.stories.*',
-        '../../../apps/react-chrome/**/*.mdx'
+        '../../../apps/react/src/**/*.stories.*',
+        '../../../apps/react/src/**/*.mdx',
+        '../../../apps/react-chrome/src/**/*.stories.*',
+        '../../../apps/react-chrome/src/**/*.mdx'
     ],
     addons: [
         '@chromatic-com/storybook',

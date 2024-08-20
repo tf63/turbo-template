@@ -11,7 +11,7 @@ import { defineConfig, devices, type PlaywrightTestConfig } from '@playwright/te
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-    testDir: './src/test/e2e',
+    testDir: './test/e2e',
     /* Run tests in files in parallel */
     fullyParallel: true,
     /* Fail the build on CI if you accidentally left test.only in the source code. */

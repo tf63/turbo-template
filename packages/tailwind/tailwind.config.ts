@@ -4,8 +4,8 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
     content: [
         '../../apps/next/src/**/*.{jsx,tsx,mdx}',
-        '../../apps/react/src/features/**/*.{jsx,tsx,mdx}',
-        '../../apps/react-chrome/src/features/**/*.{jsx,tsx,mdx}',
+        '../../apps/react/src/**/*.{jsx,tsx,mdx}',
+        '../../apps/react-chrome/src/**/*.{jsx,tsx,mdx}',
         '../../packages/ui/src/**/*.{jsx,tsx,mdx}'
     ],
     theme: {
