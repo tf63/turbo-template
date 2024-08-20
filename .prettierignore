@@ -3,7 +3,7 @@
 **/yarn.lock
 **/pnpm-lock.yaml
 
-# trash
+# misc
 **/.DS_Store
 **/*.hbs
 
