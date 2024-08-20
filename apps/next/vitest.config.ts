@@ -6,7 +6,7 @@ import { defineConfig } from 'vitest/config'
 export default defineConfig({
     plugins: [react()],
     test: {
-        include: ['./app/**/*.{test,spec}.{ts,tsx}', './features/**/*.{test,spec}.{ts,tsx}'],
+        include: ['./src/**/*.{test,spec}.{ts,tsx}'],
         exclude: [
             '**/node_modules/**',
             '**/dist/**',
@@ -32,7 +32,7 @@ export default defineConfig({
         globals: true,
         setupFiles: ['./test/unit/setup.ts'],
         alias: {
-            '@repo/next': path.resolve(__dirname, './'),
+            '@repo/next': path.resolve(__dirname, './src'),
             '@repo/ui': path.resolve(__dirname, '../../packages/ui/src')
         }
     }

@@ -7,8 +7,8 @@ const config: StorybookConfig = {
     stories: [
         '../../../packages/ui/src/**/*.stories.*',
         '../../../packages/ui/src/**/*.mdx',
-        '../../../apps/next/**/*.stories.*',
-        '../../../apps/next/**/*.mdx',
+        '../../../apps/next/src/**/*.stories.*',
+        '../../../apps/next/src/**/*.mdx',
         '../../../apps/react/**/*.stories.*',
         '../../../apps/react/**/*.mdx',
         '../../../apps/react-chrome/**/*.stories.*',
@@ -32,7 +32,7 @@ const config: StorybookConfig = {
         if (config.resolve) {
             config.resolve.alias = {
                 ...config.resolve.alias,
-                '@repo/next': path.resolve(__dirname, '../../../apps/next/'),
+                '@repo/next': path.resolve(__dirname, '../../../apps/next/src'),
                 '@repo/react': path.resolve(__dirname, '../../../apps/react/src'),
                 '@repo/react-chrome': path.resolve(__dirname, '../../../apps/react-chrome/src'),
                 '@repo/ui': path.resolve(__dirname, '../../../packages/ui/src')
