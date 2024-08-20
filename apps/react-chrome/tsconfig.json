@@ -7,6 +7,6 @@
         },
         "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },
-    "include": ["src/", "postcss.config.mjs", "playwright.config.ts"],
+    "include": ["src", "test"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

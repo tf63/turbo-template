@@ -2,10 +2,10 @@
     "extends": "@repo/typescript/tsconfig.next.json",
     "compilerOptions": {
         "paths": {
-            "@repo/next/*": ["./*"],
+            "@repo/next/*": ["./src/*"],
             "@repo/ui/*": ["../../packages/ui/src/*"]
         },
         "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
+    "include": ["src", "test", ".next/types/**/*.ts", "next-env.d.ts"]
 }
