@@ -9,12 +9,12 @@ const Page = (): JSX.Element => {
 
             <div className="my-5 w-60 space-y-3">
                 <p>Component</p>
-                <SampleCard />
+                <SampleCard text="SampleCard Component" />
             </div>
 
             <div className="my-5 w-60 space-y-3">
                 <p>Shared Component</p>
-                <Card />
+                <Card text="Card Component" />
             </div>
         </main>
     )
