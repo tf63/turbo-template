@@ -1,14 +1,20 @@
-import { {{pascalCase (extractFilename path)}} } from './{{kebabCase (extractFilename path)}}'
+import type { Meta, StoryFn, StoryObj } from '@storybook/react'
 
-import type { Meta, StoryObj } from '@storybook/react'
+import { {{pascalCase (extractFilename path)}} } from './{{kebabCase (extractFilename path)}}'
 
 type {{pascalCase (extractFilename path)}}Type = typeof {{pascalCase (extractFilename path)}}
 
 export default {
     title: '{{pascalCase (extractFilename path)}}',
     component: {{pascalCase (extractFilename path)}},
+    render: (props) => <{{pascalCase (extractFilename path)}} {...props} />,
+    decorators: (Story: StoryFn) => (
+        <div>
+            <Story />
+        </div>
+    )
 } satisfies Meta<{{pascalCase (extractFilename path)}}Type>
 
 export const Default: StoryObj<{{pascalCase (extractFilename path)}}Type> = {
-    render: () => <{{pascalCase (extractFilename path)}} />,
+    args: {}
 }
