@@ -1,16 +1,25 @@
 pre-commit:
-    parallel: true
-    scripts:
+    piped: true
+    commands:
         prettier:
             priority: 1
             glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,md,mdx,yml,yaml,css,html}'
             run: |
-                'pnpm prettier --write {staged_files}'
+                pnpm prettier {staged_files} --write
+            stage_fixed: true
+            skip:
+                - merge
+                - rebase
+
         biome:
             priority: 2
             glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
             run: |
-                'pnpm biome check --write {staged_files}'
+                pnpm biome check {staged_files} --write
+            stage_fixed: true
+            skip:
+                - merge
+                - rebase
 
 post-merge:
     commands:
