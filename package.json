@@ -12,7 +12,7 @@
         "test:e2e": "turbo test:e2e",
         "test:e2e:ui": "turbo test:e2e:ui",
         "format": "prettier . --write",
-        "prepare": "husky",
+        "prepare": "lefthook install",
         "generate": "plop"
     },
     "devDependencies": {

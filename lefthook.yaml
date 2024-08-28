@@ -1,9 +1,19 @@
 pre-commit:
     parallel: true
     scripts:
-        biome:
-            runner: 'biome check --write'
-            include: '**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
         prettier:
-            runner: 'prettier --write'
-            include: '**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,md,mdx,yml,yaml,css,html}'
+            priority: 1
+            glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,md,mdx,yml,yaml,css,html}'
+            run: |
+                'pnpm prettier --write {staged_files}'
+        biome:
+            priority: 2
+            glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+            run: |
+                'pnpm biome check --write {staged_files}'
+
+post-merge:
+    commands:
+        pnpm:
+            glob: '{package.json,pnpm-lock.yaml}'
+            run: pnpm install
