@@ -29,8 +29,7 @@ This repository utilizes the following tools:
 | [pnpm](https://pnpm.io) | Fast, disk space efficient package manager |
 | [biome](https://biomejs.dev/) | Linter for JavaScript, TypeScript, and JSON files |
 | [prettier](https://prettier.io/) | Formatter for various file types (JavaScript, TypeScript, Markdown, etc.) |
-| [husky](https://typicode.github.io/husky/) | Tool for managing Git hooks easily |
-| [lint-staged](https://github.com/lint-staged/lint-staged) | Runs linters on Git staged files, improving code quality before commits |
+| [lefthook](https://github.com/evilmartians/lefthook) | Tool for managing Git hooks easily |
 | [plop](https://plopjs.com/) | Micro-generator framework that helps create consistent project components |
 | [vitest](https://vitest.dev/) | Testing framework for unit testing |
 | [playwright](https://playwright.dev/) | Testing framework for e2e testing |
