@@ -1,0 +1,9 @@
+pre-commit:
+    parallel: true
+    scripts:
+        biome:
+            runner: 'biome check --write'
+            include: '**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+        prettier:
+            runner: 'prettier --write'
+            include: '**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,md,mdx,yml,yaml,css,html}'
