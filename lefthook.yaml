@@ -26,3 +26,9 @@ post-merge:
         pnpm:
             glob: '{package.json,pnpm-lock.yaml}'
             run: pnpm install
+
+commit-msg:
+    commands:
+        commitlint:
+            run: |
+                pnpm commitlint --edit {1}
