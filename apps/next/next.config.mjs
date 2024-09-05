@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
+import bundleAnalyzer from '@next/bundle-analyzer'
+
+const withBundleAnalyzer = bundleAnalyzer({
+    enabled: process.env.ANALYZE === 'true'
+})
+
 const nextConfig = {
     reactStrictMode: true,
     transpilePackages: ['@repo/ui'],
@@ -7,4 +12,4 @@ const nextConfig = {
     }
 }
 
-export default nextConfig
+export default withBundleAnalyzer(nextConfig)
