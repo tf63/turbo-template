@@ -2,6 +2,12 @@
     "$schema": "https://json.schemastore.org/tsconfig",
     "display": "Default",
     "compilerOptions": {
+        "paths": {
+            "@repo/next/*": ["../../packages/next/src/*"],
+            "@repo/react/*": ["../../packages/react/src/*"],
+            "@repo/react-chrome/*": ["../../packages/react-chrome/src/*"],
+            "@repo/ui/*": ["../../packages/ui/src/*"]
+        },
         "module": "ESNext",
         "moduleResolution": "Bundler",
         "isolatedModules": true,

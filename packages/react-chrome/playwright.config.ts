@@ -1,4 +1,4 @@
-import { defineConfig, devices, type PlaywrightTestConfig } from '@playwright/test'
+import { type PlaywrightTestConfig, defineConfig, devices } from '@playwright/test'
 
 /**
  * Read environment variables from file.
