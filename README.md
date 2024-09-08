@@ -33,28 +33,30 @@ This repository utilizes the following tools:
 | [plop](https://plopjs.com/) | Micro-generator framework that helps create consistent project components |
 | [vitest](https://vitest.dev/) | Testing framework for unit testing |
 | [playwright](https://playwright.dev/) | Testing framework for e2e testing |
+| [commitlint](https://commitlint.js.org/) | Linter for git commit messages to ensure they follow a consistent format |
 
 ## Repositories
 
-### apps
+### packages
 
-`apps` contains web applications that depend only on packages within the `packages/` directory, not on other applications.
+`packages` contains web applications that depend only on packages within the `packages/` directory, not on other applications.
 
 | repo             | description                                                                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **next**         | [Next.js 14](https://nextjs.org/) (App Router) application with [Tailwind CSS](https://tailwindcss.com/)                                                                          |
 | **react**        | [React 18](https://react.dev/) application using [Vite](https://vitejs.dev/) for bundling and [Tailwind CSS](https://tailwindcss.com/)                                            |
 | **react-chrome** | Chrome Extension built with [React 18](https://react.dev/), using [CRX](https://crxjs.dev/vite-plugin/), [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/) |
-| **storybook**    | [Storybook](https://storybook.js.org/) server                                                                                                                                     |
+| **storybook**    | [Storybook](https://storybook.js.org/) setup for managing UI components and their development.                                                                                    |
+| **pkg-tsup**     | Template for creating npm packages using [Tsup](https://tsup.egoist.dev/) as the bundler                                                                                          |
+| **pkg-vite**     | Template for creating npm packages using [Vite](https://vitejs.dev/) as the bundler                                                                                               |
+| **ui**           | Shared UI components library used across applications                                                                                                                             |
 
-### packages
+### configs
 
-`packages` contains shared libraries and configuration files that are reusable across multiple projects.
+`configs` contains configuration files shared across applications and packages.
 
-| repo           | description                                                                              |
-| -------------- | ---------------------------------------------------------------------------------------- |
-| **ui**         | Shared UI components library used across applications                                    |
-| **tailwind**   | [Tailwind CSS](https://tailwindcss.com/) configuration shared across applications        |
-| **typescript** | TypeScript configuration shared across applications                                      |
-| **pkg-tsup**   | Template for creating npm packages using [Tsup](https://tsup.egoist.dev/) as the bundler |
-| **pkg-vite**   | Template for creating npm packages using [Vite](https://vitejs.dev/) as the bundler      |
+| repo           | description                                                                       |
+| -------------- | --------------------------------------------------------------------------------- |
+| **tailwind**   | [Tailwind CSS](https://tailwindcss.com/) configuration shared across applications |
+| **typescript** | TypeScript configuration shared across applications                               |
+| **constants**  | Common constants and configuration settings used across applications and packages |
