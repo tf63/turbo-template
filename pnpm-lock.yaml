@@ -230,6 +230,9 @@ importers:
       '@repo/tailwind':
         specifier: workspace:*
         version: link:../../configs/tailwind
+      '@repo/typescript':
+        specifier: workspace:*
+        version: link:../../configs/typescript
       '@storybook/addon-a11y':
         specifier: ^8.2.9
         version: 8.2.9(storybook@8.2.9)
