@@ -1,9 +1,10 @@
 import path from 'node:path'
 
-import type { StorybookConfig } from '@storybook/nextjs'
+import type { StorybookConfig } from '@storybook/react-vite'
+import react from '@vitejs/plugin-react-swc'
+import { mergeConfig } from 'vite'
 
 const config: StorybookConfig = {
-    // appsのパスはプロジェクトに応じて追加する
     stories: ['../../../packages/*/src/**/*.stories.*', '../../../packages/*/src/**/*.mdx'],
     addons: [
         '@chromatic-com/storybook',
@@ -16,17 +17,21 @@ const config: StorybookConfig = {
         '@whitespace/storybook-addon-html'
     ],
     framework: {
-        name: '@storybook/nextjs',
+        name: '@storybook/react-vite',
         options: {}
     },
-    webpackFinal: (config) => {
-        if (config.resolve) {
-            config.resolve.alias = {
-                ...config.resolve.alias,
-                '@repo/*': path.resolve(__dirname, '../../../packages/*/src')
+    viteFinal: (config) => {
+        return mergeConfig(config, {
+            plugins: [react()],
+            resolve: {
+                alias: {
+                    '@repo/react': path.resolve(__dirname, '../../../packages/react/src'),
+                    '@repo/react-chrome': path.resolve(__dirname, '../../../packages/react-chrome/src'),
+                    '@repo/next': path.resolve(__dirname, '../../../packages/next/src'),
+                    '@repo/ui': path.resolve(__dirname, '../../../packages/ui/src')
+                }
             }
-        }
-        return config
+        })
     }
 }
 
