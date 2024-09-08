@@ -8,6 +8,7 @@ export default defineConfig({
     test: {
         include: ['./src/**/*.{test,spec}.{ts,tsx}'],
         exclude: [
+            './test/**',
             '**/node_modules/**',
             '**/dist/**',
             '**/.{idea,git,cache,output,temp,next}/**',
@@ -20,6 +21,7 @@ export default defineConfig({
             reportsDirectory: './test/unit/coverage',
             reporter: ['text', 'json', 'html'],
             exclude: [
+                './test/**',
                 '**/node_modules/**',
                 '**/dist/**',
                 '**/.{idea,git,cache,output,temp,next}/**',
