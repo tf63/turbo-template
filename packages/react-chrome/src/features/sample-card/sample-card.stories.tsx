@@ -8,11 +8,7 @@ export default {
     title: 'Chrome/SampleCard',
     component: SampleCard,
     render: (props) => <SampleCard {...props} />,
-    decorators: (Story: StoryFn) => (
-        <div>
-            <Story />
-        </div>
-    )
+    decorators: (Story: StoryFn) => <Story />
 } satisfies Meta<SampleCardType>
 
 export const Default: StoryObj<SampleCardType> = {
