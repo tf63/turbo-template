@@ -8,11 +8,7 @@ export default {
     title: 'Chrome/SampleBlock',
     component: SampleBlock,
     render: (props) => <SampleBlock {...props} />,
-    decorators: (Story: StoryFn) => (
-        <div>
-            <Story />
-        </div>
-    )
+    decorators: (Story: StoryFn) => <Story />
 } satisfies Meta<SampleBlockType>
 
 export const Default: StoryObj<SampleBlockType> = {

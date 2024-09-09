@@ -8,11 +8,7 @@ export default {
     title: 'Component/Card',
     component: Card,
     render: (props) => <Card {...props} />,
-    decorators: (Story: StoryFn) => (
-        <div>
-            <Story />
-        </div>
-    )
+    decorators: (Story: StoryFn) => <Story />
 } satisfies Meta<CardType>
 
 export const Default: StoryObj<CardType> = {

@@ -8,11 +8,7 @@ export default {
     title: '{{pascalCase (extractFilename path)}}',
     component: {{pascalCase (extractFilename path)}},
     render: (props) => <{{pascalCase (extractFilename path)}} {...props} />,
-    decorators: (Story: StoryFn) => (
-        <div>
-            <Story />
-        </div>
-    )
+    decorators: (Story: StoryFn) => <Story />
 } satisfies Meta<{{pascalCase (extractFilename path)}}Type>
 
 export const Default: StoryObj<{{pascalCase (extractFilename path)}}Type> = {
