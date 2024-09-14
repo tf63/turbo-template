@@ -8,9 +8,9 @@ export default {
     title: 'Component/Card',
     component: Card,
     render: (props) => <Card {...props} />,
-    decorators: (Story: StoryFn) => <Story />
+    decorators: (Story: StoryFn) => <Story />,
 } satisfies Meta<CardType>
 
 export const Default: StoryObj<CardType> = {
-    args: { text: 'Card Component' }
+    args: { text: 'Card Component' },
 }

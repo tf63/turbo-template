@@ -7,9 +7,9 @@ const config: Pick<Config, 'content' | 'presets'> = {
         './src/**/*.{jsx,tsx,mdx}',
         '!./src/**/*.stories.*',
         '../../packages/ui/**/*.{jsx,tsx,mdx}',
-        '!../../packages/ui/**/*.stories.*'
+        '!../../packages/ui/**/*.stories.*',
     ],
-    presets: [sharedConfig]
+    presets: [sharedConfig],
 }
 
 export default config

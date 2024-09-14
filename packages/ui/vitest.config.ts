@@ -13,7 +13,7 @@ export default defineConfig({
             '**/.{idea,git,cache,output,temp,next}/**',
             '**/*.stories.*',
             '**/*.config.*',
-            '**/*.d.ts'
+            '**/*.d.ts',
         ],
         coverage: {
             enabled: true,
@@ -25,14 +25,14 @@ export default defineConfig({
                 '**/.{idea,git,cache,output,temp,next}/**',
                 '**/*.stories.*',
                 '**/*.config.*',
-                '**/*.d.ts'
-            ]
+                '**/*.d.ts',
+            ],
         },
         environment: 'jsdom',
         globals: true,
         setupFiles: ['./test/unit/setup.ts'],
         alias: {
-            '@repo/ui': path.resolve(__dirname, './src')
-        }
-    }
+            '@repo/ui': path.resolve(__dirname, './src'),
+        },
+    },
 })

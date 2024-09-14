@@ -16,36 +16,36 @@ export default (plop) => {
                     'packages/ui/src/components',
                     'packages/next/src/features',
                     'packages/react/src/features',
-                    'packages/react-chrome/src/features'
-                ]
+                    'packages/react-chrome/src/features',
+                ],
             },
             {
                 type: 'input',
                 name: 'path',
-                message: 'Please enter the component path (e.g. layout/nav-sidebar)'
-            }
+                message: 'Please enter the component path (e.g. layout/nav-sidebar)',
+            },
         ],
         actions: [
             {
                 type: 'add',
                 path: '{{repo}}/{{path}}/index.tsx',
-                templateFile: 'templates/components/index.tsx.hbs'
+                templateFile: 'templates/components/index.tsx.hbs',
             },
             {
                 type: 'add',
                 path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.tsx',
-                templateFile: 'templates/components/component.tsx.hbs'
+                templateFile: 'templates/components/component.tsx.hbs',
             },
             {
                 type: 'add',
                 path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.spec.tsx',
-                templateFile: 'templates/components/component.spec.tsx.hbs'
+                templateFile: 'templates/components/component.spec.tsx.hbs',
             },
             {
                 type: 'add',
                 path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.stories.tsx',
-                templateFile: 'templates/components/component.stories.tsx.hbs'
-            }
-        ]
+                templateFile: 'templates/components/component.stories.tsx.hbs',
+            },
+        ],
     })
 }

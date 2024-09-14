@@ -5,26 +5,26 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
     plugins: [dts()],
     server: {
-        host: true
+        host: true,
     },
     resolve: {
         alias: [
             {
                 find: '@repo/vite/',
-                replacement: `${__dirname}/src/`
+                replacement: `${__dirname}/src/`,
             },
             {
                 find: '@repo/ui/',
-                replacement: `${__dirname}/../../packages/ui/src/`
-            }
-        ]
+                replacement: `${__dirname}/../../packages/ui/src/`,
+            },
+        ],
     },
     build: {
         lib: {
             entry: `${__dirname}/src/index.ts`,
             name: 'index',
             formats: ['cjs', 'es'],
-            fileName: 'index'
+            fileName: 'index',
         },
         rollupOptions: {
             external: [
@@ -37,8 +37,8 @@ export default defineConfig({
                 '**/*.test.ts',
                 '**/*.test.tsx',
                 '**/*.spec.ts',
-                '**/*.spec.tsx'
-            ]
-        }
-    }
+                '**/*.spec.tsx',
+            ],
+        },
+    },
 })

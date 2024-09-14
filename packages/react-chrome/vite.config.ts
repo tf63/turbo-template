@@ -9,9 +9,9 @@ const manifest = defineManifest({
     version: '1.0.0',
     permissions: [],
     action: {
-        default_popup: 'index.html'
+        default_popup: 'index.html',
     },
-    options_page: 'options.html'
+    options_page: 'options.html',
 })
 
 // https://stackoverflow.com/questions/78744180/vite-react-use-client-sourcemap-warning
@@ -29,23 +29,23 @@ const removeUseClient = () => {
             const newCode = code.replace(/['"]use client['"];\s*/g, '')
 
             return { code: newCode, map: null }
-        }
+        },
     }
 }
 
 export default defineConfig({
     plugins: [react(), removeUseClient(), crx({ manifest })],
     server: {
-        host: true
+        host: true,
     },
     resolve: {
         alias: [
             { find: '@repo/react-chrome/', replacement: `${__dirname}/src/` },
             {
                 find: '@repo/ui/',
-                replacement: `${__dirname}/../../packages/ui/src/`
-            }
-        ]
+                replacement: `${__dirname}/../../packages/ui/src/`,
+            },
+        ],
     },
     build: {
         rollupOptions: {
@@ -59,8 +59,8 @@ export default defineConfig({
                 '**/*.test.ts',
                 '**/*.test.tsx',
                 '**/*.spec.ts',
-                '**/*.spec.tsx'
-            ]
-        }
-    }
+                '**/*.spec.tsx',
+            ],
+        },
+    },
 })

@@ -7,7 +7,7 @@ export const decorators: Decorator[] = [
         <div className="flex items-center justify-center p-5">
             <Story />
         </div>
-    )
+    ),
 ]
 
 const preview: Preview = {
@@ -15,16 +15,16 @@ const preview: Preview = {
         controls: {
             matchers: {
                 color: /(background|color)$/i,
-                date: /Date$/i
-            }
+                date: /Date$/i,
+            },
         },
         options: {
             storySort: {
-                order: ['Component']
-            }
-        }
+                order: ['Component'],
+            },
+        },
     },
-    tags: ['autodocs']
+    tags: ['autodocs'],
 }
 
 export default preview
