@@ -6,7 +6,7 @@ import { Counter } from './counter'
 type CounterType = typeof Counter
 
 export default {
-    title: 'Component/Counter',
+    title: 'Ui/Counter',
     component: Counter,
     render: (props) => <Counter {...props} />,
     decorators: (Story: StoryFn) => <Story />,
