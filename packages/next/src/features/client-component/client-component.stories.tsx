@@ -5,7 +5,7 @@ import { ClientComponent } from './client-component'
 type ClientComponentType = typeof ClientComponent
 
 export default {
-    title: 'ClientComponent',
+    title: 'Next/ClientComponent',
     component: ClientComponent,
     render: (props) => <ClientComponent {...props} />,
     decorators: (Story: StoryFn) => <Story />,
