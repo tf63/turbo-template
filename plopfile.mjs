@@ -12,12 +12,15 @@ export default (plop) => {
                 message: 'Please select the repository name',
 
                 // Add the path to the apps to the options according to the project
-                choices: [
-                    'packages/ui/src/components',
-                    'packages/next/src/features',
-                    'packages/react/src/features',
-                    'packages/react-chrome/src/features',
-                ],
+                choices: ['ui', 'next', 'react', 'react-chrome'],
+            },
+            {
+                type: 'list',
+                name: 'type',
+                message: 'Please select the component path (packages/*/src/features|components)',
+
+                // Add the path to the apps to the options according to the project
+                choices: ['features/', 'components/'],
             },
             {
                 type: 'input',
@@ -28,22 +31,22 @@ export default (plop) => {
         actions: [
             {
                 type: 'add',
-                path: '{{repo}}/{{path}}/index.tsx',
+                path: 'packages/{{repo}}/src/{{type}}/{{path}}/index.tsx',
                 templateFile: 'templates/components/index.tsx.hbs',
             },
             {
                 type: 'add',
-                path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.tsx',
+                path: 'packages/{{repo}}/src/{{type}}/{{path}}/{{kebabCase (extractFilename path)}}.tsx',
                 templateFile: 'templates/components/component.tsx.hbs',
             },
             {
                 type: 'add',
-                path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.spec.tsx',
+                path: 'packages/{{repo}}/src/{{type}}/{{path}}/{{kebabCase (extractFilename path)}}.spec.tsx',
                 templateFile: 'templates/components/component.spec.tsx.hbs',
             },
             {
                 type: 'add',
-                path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.stories.tsx',
+                path: 'packages/{{repo}}/src/{{type}}/{{path}}/{{kebabCase (extractFilename path)}}.stories.tsx',
                 templateFile: 'templates/components/component.stories.tsx.hbs',
             },
         ],
