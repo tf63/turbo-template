@@ -4,6 +4,7 @@ type TestRunnerJestConfig = ReturnType<typeof getJestConfig>
 
 const config: TestRunnerJestConfig = {
     ...getJestConfig(),
+    // https://zenn.dev/sterashima78/articles/a4b48c8baee778
     testEnvironmentOptions: {
         'jest-playwright': {
             connectOptions: {

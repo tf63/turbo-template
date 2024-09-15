@@ -6,6 +6,7 @@ import { checkA11y, configureAxe, injectAxe } from 'axe-playwright'
  * to learn more about the test-runner hooks API.
  */
 const config: TestRunnerConfig = {
+    // https://zenn.dev/sterashima78/articles/a4b48c8baee778
     async prepare({ page, browserContext, testRunnerConfig }) {
         const targetURL = 'http://host.docker.internal:6006'
         const iframeURL = new URL('iframe.html', targetURL).toString()
