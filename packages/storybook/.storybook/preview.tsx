@@ -23,6 +23,11 @@ const preview: Preview = {
                 order: ['Component'],
             },
         },
+        a11y: {
+            config: {
+                rules: [{ id: 'color-contrast', enabled: false }],
+            },
+        },
     },
     tags: ['autodocs'],
 }

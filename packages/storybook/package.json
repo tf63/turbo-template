@@ -7,7 +7,9 @@
         "prebuild": "rm -rf storybook-static/",
         "build": "storybook build",
         "lint": "biome lint .",
-        "lint:fix": "biome lint . --write"
+        "lint:fix": "biome lint . --write",
+        "test": "test-storybook",
+        "test:watch": "test-storybook --watch"
     },
     "dependencies": {
         "next": "14.2.8",
@@ -18,14 +20,16 @@
         "@chromatic-com/storybook": "^1.8.0",
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*",
-        "@storybook/addon-a11y": "^8.2.9",
+        "@storybook/addon-a11y": "^8.3.0",
         "@storybook/addon-console": "^3.0.0",
-        "@storybook/addon-essentials": "^8.2.9",
-        "@storybook/addon-interactions": "^8.2.9",
-        "@storybook/addon-links": "^8.2.9",
-        "@storybook/addon-storysource": "^8.2.9",
-        "@storybook/react-vite": "^8.2.9",
+        "@storybook/addon-essentials": "^8.3.0",
+        "@storybook/addon-interactions": "^8.3.0",
+        "@storybook/addon-links": "^8.3.0",
+        "@storybook/addon-storysource": "^8.3.0",
+        "@storybook/react-vite": "^8.3.0",
+        "@storybook/test-runner": "^0.19.1",
         "@whitespace/storybook-addon-html": "^6.1.1",
-        "storybook": "^8.2.9"
+        "axe-playwright": "^2.0.2",
+        "storybook": "^8.3.0"
     }
 }
