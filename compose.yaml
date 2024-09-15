@@ -1,0 +1,8 @@
+services:
+    playwright:
+        image: mcr.microsoft.com/playwright:v1.47.1
+        ports:
+            - 3000:3000
+        entrypoint: npx playwright run-server --port 3000
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
