@@ -29,6 +29,7 @@
         "@storybook/react-vite": "^8.3.0",
         "@storybook/test-runner": "^0.19.1",
         "@whitespace/storybook-addon-html": "^6.1.1",
+        "axe-playwright": "^2.0.2",
         "storybook": "^8.3.0"
     }
 }
