@@ -8,7 +8,8 @@
         "dev": "pnpm build:fast -- --watch",
         "prebuild": "rm -rf dist/",
         "build": "tsup src --dts",
-        "build:fast": "tsup src"
+        "build:fast": "tsup src",
+        "clean": "rm -rf node_modules/ .turbo/"
     },
     "files": [
         "dist",

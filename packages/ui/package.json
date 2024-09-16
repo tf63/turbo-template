@@ -20,7 +20,8 @@
         "lint:fix": "biome lint . --write",
         "test": "vitest run",
         "test:watch": "vitest watch",
-        "test:ui": "vitest watch --ui"
+        "test:ui": "vitest watch --ui",
+        "clean": "rm -rf node_modules/ .turbo/ dist/"
     },
     "peerDependencies": {
         "react": "^18.2.0",

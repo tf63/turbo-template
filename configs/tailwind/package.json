@@ -11,7 +11,8 @@
         "predev": "rm -rf dist/",
         "dev": "tailwindcss -i ./styles.css -o ./dist/index.css --watch",
         "prebuild": "rm -rf dist/",
-        "build": "tailwindcss -i ./styles.css -o ./dist/index.css"
+        "build": "tailwindcss -i ./styles.css -o ./dist/index.css",
+        "clean": "rm -rf node_modules/ dist/ .turbo/"
     },
     "devDependencies": {
         "@repo/typescript": "workspace:*"

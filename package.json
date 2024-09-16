@@ -11,6 +11,7 @@
         "test:ui": "turbo test:ui",
         "test:e2e": "turbo test:e2e",
         "test:e2e:ui": "turbo test:e2e:ui",
+        "clean": "turbo clean && rm -rf node_modules/ .turbo/ .next/",
         "format": "prettier . --write",
         "prepare": "lefthook install",
         "generate": "plop"
