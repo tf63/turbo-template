@@ -1,6 +1,6 @@
 import { Card } from '@repo/ui/components/card'
 
-import { SampleCard } from '@repo/react/features/sample-card'
+import { SampleCard } from '../sample-card'
 
 type SampleBlockProps = object
 

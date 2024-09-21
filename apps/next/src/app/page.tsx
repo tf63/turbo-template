@@ -1,11 +1,11 @@
 import { Card } from '@repo/ui/components/card'
 
-import { SampleCard } from '@repo/react/features/sample-card'
+import { SampleCard } from '../features/sample-card'
 
-const App = () => {
+const Page = (): JSX.Element => {
     return (
-        <div className="min-h-screen w-full p-10">
-            <h1 className="rounded-lg bg-gray-300 p-5 text-xl">React App</h1>
+        <main className="min-h-screen w-full p-10">
+            <h1 className="rounded-lg bg-gray-300 p-5 text-xl">Next App</h1>
 
             <div className="my-5 w-60 space-y-3">
                 <p>Component</p>
@@ -16,8 +16,8 @@ const App = () => {
                 <p>Shared Component</p>
                 <Card text="Card Component" />
             </div>
-        </div>
+        </main>
     )
 }
 
-export default App
+export default Page
