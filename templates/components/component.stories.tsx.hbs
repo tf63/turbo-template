@@ -5,7 +5,7 @@ import { {{pascalCase (extractFilename path)}} } from './{{kebabCase (extractFil
 type {{pascalCase (extractFilename path)}}Type = typeof {{pascalCase (extractFilename path)}}
 
 export default {
-    title: '{{pascalCase repo}}/{{pascalCase (extractFilename path)}}',
+    title: '{{pascalCase (extractReponame repo)}}/{{pascalCase (extractFilename path)}}',
     component: {{pascalCase (extractFilename path)}},
     render: (props) => <{{pascalCase (extractFilename path)}} {...props} />,
     decorators: (Story: StoryFn) => <Story />

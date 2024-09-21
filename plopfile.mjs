@@ -2,6 +2,7 @@ import path from 'node:path'
 
 export default (plop) => {
     plop.setHelper('extractFilename', (filePath) => path.basename(filePath))
+    plop.setHelper('extractReponame', (filePath) => filePath.split('/')[1])
 
     plop.setGenerator('component', {
         description: 'Create a new component',
@@ -12,15 +13,12 @@ export default (plop) => {
                 message: 'Please select the repository name',
 
                 // Add the path to the apps to the options according to the project
-                choices: ['ui', 'next', 'react', 'react-chrome'],
-            },
-            {
-                type: 'list',
-                name: 'type',
-                message: 'Please select the component path (packages/*/src/features|components)',
-
-                // Add the path to the apps to the options according to the project
-                choices: ['features/', 'components/'],
+                choices: [
+                    'packages/ui/src/components',
+                    'apps/next/src/features',
+                    'apps/react/src/features',
+                    'apps/react-chrome/src/features',
+                ],
             },
             {
                 type: 'input',
@@ -31,22 +29,22 @@ export default (plop) => {
         actions: [
             {
                 type: 'add',
-                path: 'packages/{{repo}}/src/{{type}}/{{path}}/index.tsx',
+                path: '{{repo}}/{{path}}/index.tsx',
                 templateFile: 'templates/components/index.tsx.hbs',
             },
             {
                 type: 'add',
-                path: 'packages/{{repo}}/src/{{type}}/{{path}}/{{kebabCase (extractFilename path)}}.tsx',
+                path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.tsx',
                 templateFile: 'templates/components/component.tsx.hbs',
             },
             {
                 type: 'add',
-                path: 'packages/{{repo}}/src/{{type}}/{{path}}/{{kebabCase (extractFilename path)}}.spec.tsx',
+                path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.spec.tsx',
                 templateFile: 'templates/components/component.spec.tsx.hbs',
             },
             {
                 type: 'add',
-                path: 'packages/{{repo}}/src/{{type}}/{{path}}/{{kebabCase (extractFilename path)}}.stories.tsx',
+                path: '{{repo}}/{{path}}/{{kebabCase (extractFilename path)}}.stories.tsx',
                 templateFile: 'templates/components/component.stories.tsx.hbs',
             },
         ],
