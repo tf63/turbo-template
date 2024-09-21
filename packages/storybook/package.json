@@ -10,6 +10,7 @@
         "lint:fix": "biome lint . --write",
         "test": "test-storybook",
         "test:watch": "test-storybook --watch",
+        "serve": "serve -l 6006 storybook-static/",
         "clean": "rm -rf node_modules/ .turbo/ storybook-static/"
     },
     "dependencies": {
