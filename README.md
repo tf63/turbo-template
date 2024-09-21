@@ -16,6 +16,8 @@ pnpm test:watch  # Run the unit test in watch mode
 pnpm test:ui     # Run the unit test with UI
 pnpm test:e2e    # Run the end-to-end tests
 pnpm test:e2e:ui # Run the end-to-end tests with UI
+pnpm serve       # Serve the production build locally for previewing
+pnpm clean       # Remove node_modules and generated files (e.g., build artifacts, cache)
 pnpm format      # Format the JavaScript/TypeScript files using Biome and other files using Prettier.
 pnpm generate    # Generate a component from templates with plop
 ```
@@ -37,9 +39,9 @@ This repository utilizes the following tools:
 
 ## Repositories
 
-### packages
+### apps
 
-`packages` contains web applications that depend only on packages within the `packages/` directory, not on other applications.
+`apps` contains web applications that depend only on packages within the `packages` directory, not on other applications.
 
 | repo             | description                                                                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,9 +49,16 @@ This repository utilizes the following tools:
 | **react**        | [React 18](https://react.dev/) application using [Vite](https://vitejs.dev/) for bundling and [Tailwind CSS](https://tailwindcss.com/)                                            |
 | **react-chrome** | Chrome Extension built with [React 18](https://react.dev/), using [CRX](https://crxjs.dev/vite-plugin/), [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/) |
 | **storybook**    | [Storybook](https://storybook.js.org/) setup for managing UI components and their development.                                                                                    |
-| **pkg-tsup**     | Template for creating npm packages using [Tsup](https://tsup.egoist.dev/) as the bundler                                                                                          |
-| **pkg-vite**     | Template for creating npm packages using [Vite](https://vitejs.dev/) as the bundler                                                                                               |
-| **ui**           | Shared UI components library used across applications                                                                                                                             |
+
+### packages
+
+`packages` contains utilities and components shared across applications.
+
+| repo         | description                                                                              |
+| ------------ | ---------------------------------------------------------------------------------------- |
+| **pkg-tsup** | Template for creating npm packages using [Tsup](https://tsup.egoist.dev/) as the bundler |
+| **pkg-vite** | Template for creating npm packages using [Vite](https://vitejs.dev/) as the bundler      |
+| **ui**       | Shared UI components library used across applications                                    |
 
 ### configs
 
