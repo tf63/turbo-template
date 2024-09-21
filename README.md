@@ -6,7 +6,7 @@ This repository provides a monorepo setup for web frontend development (React 18
 
 The following commands are available:
 
-```
+```shell
 pnpm build       # Build the projects for production
 pnpm dev         # Start the development server
 pnpm lint        # Lint the JavaScript/TypeScript files (not apply changes)
@@ -20,6 +20,21 @@ pnpm serve       # Serve the production build locally for previewing
 pnpm clean       # Remove node_modules and generated files (e.g., build artifacts, cache)
 pnpm format      # Format the JavaScript/TypeScript files using Biome and other files using Prettier.
 pnpm generate    # Generate a component from templates with plop
+```
+
+For disabling cache, you can use:
+
+> [!NOTE]
+> Note that this disables reading the cache, not writing.
+
+```shell
+pnpm build --force
+```
+
+Additional filter options for running specific tasks:
+
+```shell
+pnpm dev --filter @repo/storybook # --filter or -F
 ```
 
 ## DevTools
