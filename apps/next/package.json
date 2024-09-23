@@ -25,7 +25,7 @@
         "tailwind-merge": "^2.5.2"
     },
     "devDependencies": {
-        "@next/bundle-analyzer": "^14.2.11",
+        "@next/bundle-analyzer": "^14.2.13",
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*"
     }
