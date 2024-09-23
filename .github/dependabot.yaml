@@ -5,6 +5,12 @@ updates:
       schedule:
           interval: weekly
           timezone: Asia/Tokyo
+      ignore:
+          - dependency-name: 'playwright'
+            versions: ['*']
+          - dependency-name: '@playwright/test'
+            versions: ['*']
+
       groups:
           dependencies:
               dependency-type: production
