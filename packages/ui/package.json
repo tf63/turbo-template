@@ -29,6 +29,7 @@
     },
     "devDependencies": {
         "@repo/tailwind": "workspace:*",
-        "@repo/typescript": "workspace:*"
+        "@repo/typescript": "workspace:*",
+        "@repo/storybook": "workspace:*"
     }
 }
