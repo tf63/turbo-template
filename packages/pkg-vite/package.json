@@ -27,6 +27,6 @@
     "types": "./dist/index.d.ts",
     "devDependencies": {
         "@repo/typescript": "workspace:*",
-        "vite-plugin-dts": "^4.2.1"
+        "vite-plugin-dts": "^4.2.2"
     }
 }
