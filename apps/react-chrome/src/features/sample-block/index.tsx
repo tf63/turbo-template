@@ -1,1 +1,1 @@
-export * from './sample-block'
+export { SampleBlock } from './sample-block.tsx'
