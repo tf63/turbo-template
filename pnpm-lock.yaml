@@ -129,6 +129,9 @@ importers:
       '@next/bundle-analyzer':
         specifier: ^14.2.11
         version: 14.2.11
+      '@repo/storybook':
+        specifier: workspace:*
+        version: link:../storybook
       '@repo/tailwind':
         specifier: workspace:*
         version: link:../../configs/tailwind
@@ -154,6 +157,9 @@ importers:
         specifier: ^2.5.2
         version: 2.5.2
     devDependencies:
+      '@repo/storybook':
+        specifier: workspace:*
+        version: link:../storybook
       '@repo/tailwind':
         specifier: workspace:*
         version: link:../../configs/tailwind
@@ -182,6 +188,9 @@ importers:
       '@crxjs/vite-plugin':
         specifier: 2.0.0-beta.25
         version: 2.0.0-beta.25
+      '@repo/storybook':
+        specifier: workspace:*
+        version: link:../storybook
       '@repo/tailwind':
         specifier: workspace:*
         version: link:../../configs/tailwind
