@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 
 import './index.css'
 
-import { Card } from '@repo/ui/components/card'
+import { SampleCard } from '@repo/react-chrome/features/sample-card'
+import { Provider } from '@repo/react-chrome/provider'
 
-import { SampleCard } from './features/sample-card'
-import { Provider } from './provider'
+import { Card } from '@repo/ui/components/card'
 
 const Popup = () => {
     return (
