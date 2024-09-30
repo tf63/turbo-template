@@ -1,7 +1,10 @@
-import { render } from '@testing-library/react'
+import { composeStories } from '@storybook/react'
 
-import { SampleBlock } from '.'
+import * as stories from './sample-block.stories'
 
-test('renders SampleBlock component', () => {
-    render(<SampleBlock />)
+stories.default.decorators = []
+const { Default } = composeStories(stories)
+
+test('renders SampleBlock component', async () => {
+    await Default.run()
 })
