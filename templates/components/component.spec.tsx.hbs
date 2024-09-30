@@ -1,7 +1,10 @@
-import { render } from '@testing-library/react'
+import { composeStories } from '@storybook/react'
 
-import { {{pascalCase (extractFilename path)}} } from '.'
+import * as stories from './{{kebabCase (extractFilename path)}}.stories'
 
-test('renders {{pascalCase (extractFilename path)}} component', () => {
-    render(<{{pascalCase (extractFilename path)}} />)
+stories.default.decorators = []
+const { Default } = composeStories(stories)
+
+test('renders {{pascalCase (extractFilename path)}} component', async () => {
+    await Default.run()
 })
