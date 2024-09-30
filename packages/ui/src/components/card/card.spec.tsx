@@ -1,7 +1,10 @@
-import { render } from '@testing-library/react'
+import { composeStories } from '@storybook/react'
 
-import { Card } from '.'
+import * as stories from './card.stories'
 
-test('renders Card component', () => {
-    render(<Card text="Card Component" />)
+stories.default.decorators = []
+const { Default } = composeStories(stories)
+
+test('renders Card component', async () => {
+    await Default.run()
 })

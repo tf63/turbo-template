@@ -1,7 +1,10 @@
-import { render } from '@testing-library/react'
+import { composeStories } from '@storybook/react'
 
-import { Counter } from '.'
+import * as stories from './counter.stories'
 
-test('renders Counter component', () => {
-    render(<Counter />)
+stories.default.decorators = []
+const { Default } = composeStories(stories)
+
+test('renders Counter component', async () => {
+    await Default.run()
 })

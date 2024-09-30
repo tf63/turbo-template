@@ -1,14 +1,6 @@
-import type { Decorator, Preview } from '@storybook/react'
+import type { Preview } from '@storybook/react'
 
 import '@repo/tailwind/styles.css'
-
-export const decorators: Decorator[] = [
-    (Story) => (
-        <div className="flex items-center justify-center p-5">
-            <Story />
-        </div>
-    ),
-]
 
 const preview: Preview = {
     parameters: {
@@ -29,6 +21,11 @@ const preview: Preview = {
             },
         },
     },
+    decorators: (Story) => (
+        <div className="flex items-center justify-center p-5">
+            <Story />
+        </div>
+    ),
     tags: ['autodocs'],
 }
 

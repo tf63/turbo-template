@@ -28,6 +28,7 @@
     "devDependencies": {
         "@next/bundle-analyzer": "^14.2.13",
         "@repo/tailwind": "workspace:*",
-        "@repo/typescript": "workspace:*"
+        "@repo/typescript": "workspace:*",
+        "@repo/storybook": "workspace:*"
     }
 }
