@@ -8,7 +8,7 @@ export default {
     title: 'React/SampleCard',
     component: SampleCard,
     render: (props) => <SampleCard {...props} />,
-    decorators: (Story: StoryFn) => <Story />,
+    decorators: [(Story: StoryFn) => <Story />],
 } satisfies Meta<SampleCardType>
 
 export const Default: StoryObj<SampleCardType> = {

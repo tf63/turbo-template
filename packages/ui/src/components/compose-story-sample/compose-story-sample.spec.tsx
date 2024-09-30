@@ -3,7 +3,8 @@ import { screen } from '@testing-library/react'
 
 import * as stories from './compose-story-sample.stories'
 
-const { Default } = composeStories(stories, { decorators: [], parameters: {} })
+stories.default.decorators = []
+const { Default } = composeStories(stories)
 
 test('renders ComposeStorySample component', async () => {
     await Default.run()

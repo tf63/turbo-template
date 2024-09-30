@@ -8,7 +8,7 @@ export default {
     title: 'Ui/ComposeStorySample',
     component: ComposeStorySample,
     render: (props) => <ComposeStorySample {...props} />,
-    decorators: (Story: StoryFn) => <Story />,
+    decorators: [(Story: StoryFn) => <Story />],
 } satisfies Meta<ComposeStorySampleType>
 
 export const Default: StoryObj<ComposeStorySampleType> = {

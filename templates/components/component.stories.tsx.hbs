@@ -8,9 +8,9 @@ export default {
     title: '{{pascalCase (extractReponame repo)}}/{{pascalCase (extractFilename path)}}',
     component: {{pascalCase (extractFilename path)}},
     render: (props) => <{{pascalCase (extractFilename path)}} {...props} />,
-    decorators: (Story: StoryFn) => <Story />
+    decorators: [(Story: StoryFn) => <Story />],
 } satisfies Meta<{{pascalCase (extractFilename path)}}Type>
 
 export const Default: StoryObj<{{pascalCase (extractFilename path)}}Type> = {
-    args: {}
+    args: {},
 }

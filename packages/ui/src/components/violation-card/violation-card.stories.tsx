@@ -8,7 +8,7 @@ export default {
     title: 'Ui/ViolationCard',
     component: ViolationCard,
     render: (props) => <ViolationCard {...props} />,
-    decorators: (Story: StoryFn) => <Story />,
+    decorators: [(Story: StoryFn) => <Story />],
 } satisfies Meta<ViolationCardType>
 
 export const Default: StoryObj<ViolationCardType> = {
