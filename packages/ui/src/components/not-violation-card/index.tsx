@@ -1,1 +1,1 @@
-export * from './not-violation-card'
+export { NotViolationCard } from './not-violation-card.tsx'

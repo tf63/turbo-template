@@ -1,1 +1,1 @@
-export * from './client-component'
+export { ClientComponent } from './client-component.tsx'

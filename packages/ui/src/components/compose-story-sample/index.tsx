@@ -1,1 +1,1 @@
-export * from './compose-story-sample'
+export { ComposeStorySample } from './compose-story-sample.tsx'
