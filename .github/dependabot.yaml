@@ -10,6 +10,8 @@ updates:
             versions: ['*']
           - dependency-name: '@playwright/test'
             versions: ['*']
+          - dependency-name: 'axe-playwright'
+            versions: ['*']
 
       groups:
           dependencies:
