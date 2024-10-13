@@ -9,6 +9,8 @@
         "prebuild": "rm -rf dist/",
         "build": "tsup src --dts",
         "build:fast": "tsup src",
+        "lint": "biome lint .",
+        "lint:fix": "biome lint . --write",
         "clean": "rm -rf node_modules/ .turbo/"
     },
     "files": [

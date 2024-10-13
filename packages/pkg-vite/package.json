@@ -8,6 +8,8 @@
         "dev": "vite build --watch",
         "prebuild": "rm -rf dist/",
         "build": "vite build && tsc",
+        "lint": "biome lint .",
+        "lint:fix": "biome lint . --write",
         "clean": "rm -rf node_modules/ .turbo/"
     },
     "files": [
