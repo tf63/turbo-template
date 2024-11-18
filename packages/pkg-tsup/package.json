@@ -30,6 +30,6 @@
     "types": "./dist/index.d.ts",
     "devDependencies": {
         "@repo/typescript": "workspace:*",
-        "tsup": "^8.3.0"
+        "tsup": "^8.3.5"
     }
 }
