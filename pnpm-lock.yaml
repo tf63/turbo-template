@@ -74,9 +74,6 @@ importers:
       lefthook:
         specifier: ^1.10.1
         version: 1.10.1
-      playwright:
-        specifier: 1.47.1
-        version: 1.47.1
       plop:
         specifier: ^4.0.1
         version: 4.0.1
@@ -244,7 +241,7 @@ importers:
         version: 6.1.1(prettier@3.4.2)(react-syntax-highlighter@15.6.1)
       axe-playwright:
         specifier: ^2.0.2
-        version: 2.0.2(playwright@1.47.1)
+        version: 2.0.2(playwright@1.49.1)
       storybook:
         specifier: ^8.4.7
         version: 8.4.7(prettier@3.4.2)
@@ -5771,7 +5768,7 @@ packages:
       rimraf: 3.0.2
     dev: true
 
-  /axe-playwright@2.0.2(playwright@1.47.1):
+  /axe-playwright@2.0.2(playwright@1.49.1):
     resolution: {integrity: sha512-ti/oyzfxdvoxcidqCIe+YoOoRumU1Vs55WXEmruE2SxyI1ZQ/+mzsB294o2T1b0YdoMKNO9h4S+8CbO1lXqiQw==}
     peerDependencies:
       playwright: '>1.0.0'
@@ -5781,7 +5778,7 @@ packages:
       axe-html-reporter: 2.2.3(axe-core@4.9.1)
       junit-report-builder: 3.2.1
       picocolors: 1.1.0
-      playwright: 1.47.1
+      playwright: 1.49.1
     dev: true
 
   /axios@1.7.7:
