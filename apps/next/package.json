@@ -20,15 +20,15 @@
     "dependencies": {
         "@repo/ui": "workspace:*",
         "clsx": "^2.1.1",
-        "next": "^14.2.13",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "tailwind-merge": "^2.5.2"
+        "next": "^14.2.22",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "tailwind-merge": "^2.6.0"
     },
     "devDependencies": {
-        "@next/bundle-analyzer": "^14.2.15",
+        "@next/bundle-analyzer": "^14.2.22",
+        "@repo/storybook": "workspace:*",
         "@repo/tailwind": "workspace:*",
-        "@repo/typescript": "workspace:*",
-        "@repo/storybook": "workspace:*"
+        "@repo/typescript": "workspace:*"
     }
 }
