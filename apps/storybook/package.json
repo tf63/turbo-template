@@ -6,7 +6,7 @@
         "./config/*": "./.storybook/*"
     },
     "scripts": {
-        "dev": "storybook dev -p 6006",
+        "dev": "storybook dev -p 6006 --no-open",
         "prebuild": "rm -rf storybook-static/",
         "build": "storybook build",
         "lint": "biome lint .",
