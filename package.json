@@ -39,7 +39,6 @@
         "autoprefixer": "^10.4.20",
         "jsdom": "^25.0.1",
         "lefthook": "^1.10.1",
-        "playwright": "1.47.1",
         "plop": "^4.0.1",
         "postcss": "^8.4.49",
         "prettier": "^3.4.2",
