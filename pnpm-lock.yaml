@@ -13,6 +13,12 @@ catalogs:
       specifier: ^14.2.22
       version: 14.2.22
   react18:
+    '@types/react':
+      specifier: ^18.3.1
+      version: 18.3.18
+    '@types/react-dom':
+      specifier: ^18.3.1
+      version: 18.3.5
     react:
       specifier: ^18.3.1
       version: 18.3.1
@@ -63,12 +69,6 @@ importers:
       '@types/node':
         specifier: ^22.10.2
         version: 22.10.2
-      '@types/react':
-        specifier: ^18.3.18
-        version: 18.3.18
-      '@types/react-dom':
-        specifier: ^18.3.5
-        version: 18.3.5(@types/react@18.3.18)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
         version: 4.3.4(vite@5.4.11(@types/node@22.10.2)(terser@5.37.0))
@@ -154,6 +154,12 @@ importers:
       '@repo/typescript':
         specifier: workspace:*
         version: link:../../configs/typescript
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.18
+      '@types/react-dom':
+        specifier: catalog:react18
+        version: 18.3.5(@types/react@18.3.18)
 
   apps/react:
     dependencies:
@@ -182,6 +188,12 @@ importers:
       '@repo/typescript':
         specifier: workspace:*
         version: link:../../configs/typescript
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.18
+      '@types/react-dom':
+        specifier: catalog:react18
+        version: 18.3.5(@types/react@18.3.18)
 
   apps/react-chrome:
     dependencies:
@@ -216,6 +228,12 @@ importers:
       '@types/chrome':
         specifier: ^0.0.277
         version: 0.0.277
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.18
+      '@types/react-dom':
+        specifier: catalog:react18
+        version: 18.3.5(@types/react@18.3.18)
 
   apps/storybook:
     devDependencies:
@@ -252,6 +270,12 @@ importers:
       '@storybook/test-runner':
         specifier: ^0.19.1
         version: 0.19.1(@swc/helpers@0.5.5)(@types/node@22.10.2)(storybook@8.4.7(prettier@3.4.2))
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.18
+      '@types/react-dom':
+        specifier: catalog:react18
+        version: 18.3.5(@types/react@18.3.18)
       '@whitespace/storybook-addon-html':
         specifier: ^6.1.1
         version: 6.1.1(prettier@3.4.2)(react-syntax-highlighter@15.6.1(react@18.3.1))
@@ -312,6 +336,12 @@ importers:
       '@repo/typescript':
         specifier: workspace:*
         version: link:../../configs/typescript
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.18
+      '@types/react-dom':
+        specifier: catalog:react18
+        version: 18.3.5(@types/react@18.3.18)
 
 packages:
 
