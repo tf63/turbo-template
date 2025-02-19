@@ -28,6 +28,8 @@
         "react-dom": "catalog:react18"
     },
     "devDependencies": {
+        "@types/react": "catalog:react18",
+        "@types/react-dom": "catalog:react18",
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*",
         "@repo/storybook": "workspace:*"

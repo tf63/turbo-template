@@ -27,6 +27,8 @@
     },
     "devDependencies": {
         "@next/bundle-analyzer": "^14.2.22",
+        "@types/react": "catalog:react18",
+        "@types/react-dom": "catalog:react18",
         "@repo/storybook": "workspace:*",
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*"
