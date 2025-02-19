@@ -19,11 +19,13 @@
     "dependencies": {
         "@repo/ui": "workspace:*",
         "clsx": "^2.1.1",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
+        "react": "catalog:react18",
+        "react-dom": "catalog:react18",
         "tailwind-merge": "^2.6.0"
     },
     "devDependencies": {
+        "@types/react": "catalog:react18",
+        "@types/react-dom": "catalog:react18",
         "@crxjs/vite-plugin": "2.0.0-beta.25",
         "@repo/storybook": "workspace:*",
         "@repo/tailwind": "workspace:*",
