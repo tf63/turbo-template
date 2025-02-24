@@ -1,10 +1,10 @@
 {
-    "name": "@repo/next",
+    "name": "@repo/next14",
     "version": "0.0.0",
     "private": true,
     "scripts": {
         "predev": "rm -rf .next/",
-        "dev": "next dev",
+        "dev": "next dev --port 3000",
         "prebuild": "rm -rf .next/",
         "build": "next build",
         "lint": "biome lint .",
@@ -14,7 +14,7 @@
         "test:ui": "vitest watch --ui",
         "test:e2e": "playwright test",
         "test:e2e:ui": "playwright show-report --port 0",
-        "serve": "next start",
+        "serve": "next start --port 3000",
         "clean": "rm -rf .next/ node_modules/ .turbo/ playwright-report/ test-results/"
     },
     "dependencies": {

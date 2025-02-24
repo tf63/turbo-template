@@ -43,8 +43,11 @@
         "@repo/storybook#serve": {
             "dependsOn": ["@repo/storybook#build"]
         },
-        "@repo/next#serve": {
-            "dependsOn": ["@repo/next#build"]
+        "@repo/next14#serve": {
+            "dependsOn": ["@repo/next14#build"]
+        },
+        "@repo/next15#serve": {
+            "dependsOn": ["@repo/next15#build"]
         },
         "clean": {}
     }
