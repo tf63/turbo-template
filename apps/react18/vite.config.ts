@@ -28,7 +28,7 @@ export default defineConfig({
     },
     resolve: {
         alias: [
-            { find: '@repo/react/', replacement: `${__dirname}/src/` },
+            { find: '@repo/react18/', replacement: `${__dirname}/src/` },
             {
                 find: '@repo/ui/',
                 replacement: `${__dirname}/../../packages/ui/src/`,

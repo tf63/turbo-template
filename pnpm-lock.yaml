@@ -161,40 +161,6 @@ importers:
         specifier: catalog:react18
         version: 18.3.5(@types/react@18.3.18)
 
-  apps/react:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      react:
-        specifier: catalog:react18
-        version: 18.3.1
-      react-dom:
-        specifier: catalog:react18
-        version: 18.3.1(react@18.3.1)
-      tailwind-merge:
-        specifier: ^2.5.2
-        version: 2.5.2
-    devDependencies:
-      '@repo/storybook':
-        specifier: workspace:*
-        version: link:../storybook
-      '@repo/tailwind':
-        specifier: workspace:*
-        version: link:../../configs/tailwind
-      '@repo/typescript':
-        specifier: workspace:*
-        version: link:../../configs/typescript
-      '@types/react':
-        specifier: catalog:react18
-        version: 18.3.18
-      '@types/react-dom':
-        specifier: catalog:react18
-        version: 18.3.5(@types/react@18.3.18)
-
   apps/react-chrome:
     dependencies:
       '@repo/ui':
@@ -228,6 +194,40 @@ importers:
       '@types/chrome':
         specifier: ^0.0.277
         version: 0.0.277
+      '@types/react':
+        specifier: catalog:react18
+        version: 18.3.18
+      '@types/react-dom':
+        specifier: catalog:react18
+        version: 18.3.5(@types/react@18.3.18)
+
+  apps/react18:
+    dependencies:
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      react:
+        specifier: catalog:react18
+        version: 18.3.1
+      react-dom:
+        specifier: catalog:react18
+        version: 18.3.1(react@18.3.1)
+      tailwind-merge:
+        specifier: ^2.5.2
+        version: 2.6.0
+    devDependencies:
+      '@repo/storybook':
+        specifier: workspace:*
+        version: link:../storybook
+      '@repo/tailwind':
+        specifier: workspace:*
+        version: link:../../configs/tailwind
+      '@repo/typescript':
+        specifier: workspace:*
+        version: link:../../configs/typescript
       '@types/react':
         specifier: catalog:react18
         version: 18.3.18
@@ -6626,9 +6626,6 @@ packages:
 
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
-
-  tailwind-merge@2.5.2:
-    resolution: {integrity: sha512-kjEBm+pvD+6eAwzJL2Bi+02/9LFLal1Gs61+QB7HvTfQQ0aXwC5LGT8PEt1gS0CWKktKe6ysPTAy3cBC5MeiIg==}
 
   tailwind-merge@2.6.0:
     resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
@@ -14413,8 +14410,6 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   symbol-tree@3.2.4: {}
-
-  tailwind-merge@2.5.2: {}
 
   tailwind-merge@2.6.0: {}
 

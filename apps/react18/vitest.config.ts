@@ -34,7 +34,7 @@ export default defineConfig({
         globals: true,
         setupFiles: ['./test/unit/setup.ts'],
         alias: {
-            '@repo/react': path.resolve(__dirname, './src'),
+            '@repo/react18': path.resolve(__dirname, './src'),
             '@repo/ui': path.resolve(__dirname, '../../packages/ui/src'),
         },
     },
