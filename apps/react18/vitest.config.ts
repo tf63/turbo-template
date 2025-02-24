@@ -5,6 +5,11 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
     plugins: [react()],
+    server: {
+        host: true,
+        port: 5174,
+        strictPort: true,
+    },
     test: {
         include: ['./src/**/*.{test,spec}.{ts,tsx}'],
         exclude: [

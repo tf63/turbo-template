@@ -25,6 +25,8 @@ export default defineConfig({
     plugins: [react(), removeUseClient()],
     server: {
         host: true,
+        port: 5173,
+        strictPort: true,
     },
     resolve: {
         alias: [

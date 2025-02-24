@@ -27,7 +27,7 @@ To start the development server with hot reload enabled, run:
 pnpm dev
 ```
 
-This will start Vite's development server at `localhost:5173`, and it will automatically reload the application as you make changes.
+This will start Vite's development server at `localhost:5174`, and it will automatically reload the application as you make changes.
 
 ### Building
 
