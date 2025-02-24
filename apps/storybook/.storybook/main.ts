@@ -32,6 +32,7 @@ const config: StorybookConfig = {
                 alias: {
                     '@repo/next': path.resolve(__dirname, '../../../apps/next/src'),
                     '@repo/react18': path.resolve(__dirname, '../../../apps/react18/src'),
+                    '@repo/react19': path.resolve(__dirname, '../../../apps/react19/src'),
                     '@repo/react-chrome': path.resolve(__dirname, '../../../apps/react-chrome/src'),
                     '@repo/ui': path.resolve(__dirname, '../../../packages/ui/src'),
                 },

@@ -17,6 +17,7 @@ export default (plop) => {
                     'packages/ui/src/components',
                     'apps/next/src/features',
                     'apps/react18/src/features',
+                    'apps/react19/src/features',
                     'apps/react-chrome/src/features',
                 ],
             },
