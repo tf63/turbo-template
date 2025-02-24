@@ -5,7 +5,7 @@ import { SampleBlock } from './sample-block'
 type SampleBlockType = typeof SampleBlock
 
 export default {
-    title: 'Next/SampleBlock',
+    title: 'Next14/SampleBlock',
     component: SampleBlock,
     render: (props) => <SampleBlock {...props} />,
     decorators: [(Story: StoryFn) => <Story />],

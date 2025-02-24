@@ -5,7 +5,7 @@ import { SampleCard } from './sample-card'
 type SampleCardType = typeof SampleCard
 
 export default {
-    title: 'Next/SampleCard',
+    title: 'Next14/SampleCard',
     component: SampleCard,
     render: (props) => <SampleCard {...props} />,
     decorators: [(Story: StoryFn) => <Story />],
