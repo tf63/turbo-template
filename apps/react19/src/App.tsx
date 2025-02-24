@@ -1,6 +1,6 @@
 import { Card } from '@repo/ui/components/card'
 
-import { SampleCard } from '@repo/react/features/sample-card'
+import { SampleCard } from '@repo/react19/features/sample-card'
 
 const App = () => {
     return (

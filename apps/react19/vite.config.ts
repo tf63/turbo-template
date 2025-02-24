@@ -25,10 +25,12 @@ export default defineConfig({
     plugins: [react(), removeUseClient()],
     server: {
         host: true,
+        port: 5174,
+        strictPort: true,
     },
     resolve: {
         alias: [
-            { find: '@repo/react/', replacement: `${__dirname}/src/` },
+            { find: '@repo/react19/', replacement: `${__dirname}/src/` },
             {
                 find: '@repo/ui/',
                 replacement: `${__dirname}/../../packages/ui/src/`,

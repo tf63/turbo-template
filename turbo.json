@@ -34,8 +34,11 @@
             "cache": false,
             "persistent": true
         },
-        "@repo/react#serve": {
-            "dependsOn": ["@repo/react#build"]
+        "@repo/react18#serve": {
+            "dependsOn": ["@repo/react18#build"]
+        },
+        "@repo/react19#serve": {
+            "dependsOn": ["@repo/react19#build"]
         },
         "@repo/storybook#serve": {
             "dependsOn": ["@repo/storybook#build"]

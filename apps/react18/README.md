@@ -10,8 +10,8 @@ To get started with this React application, follow these steps:
 
 Ensure you have the following installed:
 
--   Node.js (v20.11.0)
--   pnpm (v8.15.6)
+- Node.js (v20.11.0)
+- pnpm (v8.15.6)
 
 ### Installation
 

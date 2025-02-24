@@ -5,6 +5,11 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
     plugins: [react()],
+    server: {
+        host: true,
+        port: 5174,
+        strictPort: true,
+    },
     test: {
         include: ['./src/**/*.{test,spec}.{ts,tsx}'],
         exclude: [
@@ -34,7 +39,7 @@ export default defineConfig({
         globals: true,
         setupFiles: ['./test/unit/setup.ts'],
         alias: {
-            '@repo/react': path.resolve(__dirname, './src'),
+            '@repo/react19': path.resolve(__dirname, './src'),
             '@repo/ui': path.resolve(__dirname, '../../packages/ui/src'),
         },
     },
