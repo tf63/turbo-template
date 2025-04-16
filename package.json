@@ -27,6 +27,17 @@
         "@storybook/nextjs": "^8.4.7",
         "@storybook/react": "^8.4.7",
         "@storybook/test": "^8.4.7",
+        "@storybook/addon-a11y": "^8.4.7",
+        "@storybook/addon-console": "^3.0.0",
+        "@storybook/addon-essentials": "^8.4.7",
+        "@storybook/addon-interactions": "^8.4.7",
+        "@storybook/addon-links": "^8.4.7",
+        "@storybook/addon-storysource": "^8.4.7",
+        "@storybook/react-vite": "^8.4.7",
+        "@storybook/test-runner": "^0.19.1",
+        "@whitespace/storybook-addon-html": "^6.1.1",
+        "@chromatic-com/storybook": "^2.0.2",
+        "axe-playwright": "^2.0.2",
         "@testing-library/jest-dom": "^6.6.3",
         "@testing-library/react": "^16.1.0",
         "@types/node": "^22.10.2",
@@ -34,6 +45,7 @@
         "@vitejs/plugin-react-swc": "^3.7.2",
         "@vitest/coverage-v8": "^2.1.8",
         "@vitest/ui": "^2.1.8",
+        "storybook": "^8.4.7",
         "autoprefixer": "^10.4.20",
         "jsdom": "^25.0.1",
         "lefthook": "^1.10.1",
@@ -58,6 +70,14 @@
     "pnpm": {
         "overrides": {
             "rollup@<2.79.2": ">=2.79.2"
-        }
+        },
+        "onlyBuiltDependencies": [
+            "@biomejs/biome",
+            "@swc/core",
+            "core-js-pure",
+            "esbuild",
+            "lefthook",
+            "sharp"
+        ]
     }
 }

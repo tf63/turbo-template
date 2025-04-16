@@ -15,10 +15,8 @@ export default (plop) => {
                 // Add the path to the apps to the options according to the project
                 choices: [
                     'packages/ui/src/components',
-                    'apps/next14/src/features',
-                    'apps/next15/src/features',
-                    'apps/react18/src/features',
-                    'apps/react19/src/features',
+                    'apps/next/src/features',
+                    'apps/react/src/features',
                     'apps/react-chrome/src/features',
                 ],
             },

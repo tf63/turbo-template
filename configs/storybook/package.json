@@ -1,0 +1,14 @@
+{
+    "name": "@repo/storybook2",
+    "version": "0.0.0",
+    "private": true,
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@types/react": "catalog:react",
+        "@types/react-dom": "catalog:react",
+        "@repo/typescript": "workspace:*"
+    }
+}

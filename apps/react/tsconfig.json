@@ -1,0 +1,12 @@
+{
+    "extends": "@repo/typescript/tsconfig.react.json",
+    "compilerOptions": {
+        "paths": {
+            "@repo/react/*": ["./src/*"],
+            "@repo/ui/*": ["../../packages/ui/src/*"]
+        },
+        "types": ["@testing-library/jest-dom", "node", "vitest/globals"]
+    },
+    "include": ["src", "test"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
