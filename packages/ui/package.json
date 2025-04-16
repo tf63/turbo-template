@@ -24,12 +24,12 @@
         "clean": "rm -rf node_modules/ .turbo/ dist/"
     },
     "peerDependencies": {
-        "react": "catalog:react18",
-        "react-dom": "catalog:react18"
+        "react": "catalog:react",
+        "react-dom": "catalog:react"
     },
     "devDependencies": {
-        "@types/react": "catalog:react18",
-        "@types/react-dom": "catalog:react18",
+        "@types/react": "catalog:react",
+        "@types/react-dom": "catalog:react",
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*",
         "@repo/storybook": "workspace:*"

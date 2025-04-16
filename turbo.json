@@ -34,20 +34,14 @@
             "cache": false,
             "persistent": true
         },
-        "@repo/react18#serve": {
-            "dependsOn": ["@repo/react18#build"]
-        },
-        "@repo/react19#serve": {
-            "dependsOn": ["@repo/react19#build"]
+        "@repo/react#serve": {
+            "dependsOn": ["@repo/react#build"]
         },
         "@repo/storybook#serve": {
             "dependsOn": ["@repo/storybook#build"]
         },
-        "@repo/next14#serve": {
-            "dependsOn": ["@repo/next14#build"]
-        },
-        "@repo/next15#serve": {
-            "dependsOn": ["@repo/next15#build"]
+        "@repo/next#serve": {
+            "dependsOn": ["@repo/next#build"]
         },
         "clean": {}
     }
