@@ -5,7 +5,7 @@ import { NotViolationCard } from './not-violation-card'
 type NotViolationCardType = typeof NotViolationCard
 
 export default {
-    title: 'Ui/NotViolationCard',
+    title: 'NotViolationCard',
     component: NotViolationCard,
     render: (props) => <NotViolationCard {...props} />,
     decorators: [(Story: StoryFn) => <Story />],

@@ -5,7 +5,7 @@ import { ComposeStorySample } from './compose-story-sample'
 type ComposeStorySampleType = typeof ComposeStorySample
 
 export default {
-    title: 'Ui/ComposeStorySample',
+    title: 'ComposeStorySample',
     component: ComposeStorySample,
     render: (props) => <ComposeStorySample {...props} />,
     decorators: [(Story: StoryFn) => <Story />],

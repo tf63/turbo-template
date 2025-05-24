@@ -37,9 +37,6 @@
         "@repo/react#serve": {
             "dependsOn": ["@repo/react#build"]
         },
-        "@repo/storybook#serve": {
-            "dependsOn": ["@repo/storybook#build"]
-        },
         "@repo/next#serve": {
             "dependsOn": ["@repo/next#build"]
         },

@@ -14,20 +14,26 @@
         "test:ui": "vitest watch --ui",
         "test:e2e": "playwright test",
         "test:e2e:ui": "playwright show-report --port 0",
+        "storybook": "storybook dev -p 6006 --no-open",
+        "storybook:build": "storybook build",
+        "storybook:serve": "serve -l 6006 storybook-static/",
+        "storybook:test": "test-storybook --url http://localhost:6006",
+        "storybook:test:watch": "test-storybook --watch --url http://localhost:6006",
         "serve": "next start --port 3000",
-        "clean": "rm -rf .next/ node_modules/ .turbo/ playwright-report/ test-results/"
+        "clean": "rm -rf .next/ node_modules/ .turbo/ storybook-static/ playwright-report/ test-results/ "
     },
     "dependencies": {
         "@repo/ui": "workspace:*",
         "clsx": "2.1.1",
         "next": "catalog:next",
+        "react": "catalog:react",
+        "react-dom": "catalog:react",
         "tailwind-merge": "2.6.0"
     },
     "devDependencies": {
         "@next/bundle-analyzer": "catalog:next",
         "@types/react": "catalog:react",
         "@types/react-dom": "catalog:react",
-        "@repo/storybook": "workspace:*",
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*"
     }

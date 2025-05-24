@@ -21,13 +21,17 @@
         "test": "vitest run",
         "test:watch": "vitest watch",
         "test:ui": "vitest watch --ui",
-        "clean": "rm -rf node_modules/ .turbo/ dist/"
+        "storybook": "storybook dev -p 6009 --no-open",
+        "storybook:build": "storybook build",
+        "storybook:serve": "serve -l 6009 storybook-static/",
+        "storybook:test": "test-storybook --url http://127.0.0.1:6009",
+        "storybook:test:watch": "test-storybook --watch",
+        "clean": "rm -rf node_modules/ .turbo/ dist/ storybook-static/ playwright-report/ test-results/ "
     },
     "devDependencies": {
         "@types/react": "catalog:react",
         "@types/react-dom": "catalog:react",
         "@repo/tailwind": "workspace:*",
-        "@repo/typescript": "workspace:*",
-        "@repo/storybook": "workspace:*"
+        "@repo/typescript": "workspace:*"
     }
 }
