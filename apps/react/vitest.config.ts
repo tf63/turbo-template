@@ -29,6 +29,7 @@ export default defineConfig({
                 './test/**',
                 '**/node_modules/**',
                 '**/dist/**',
+                '**/storybook-static',
                 '**/.{idea,git,cache,output,temp,next}/**',
                 '**/*.stories.*',
                 '**/*.config.*',

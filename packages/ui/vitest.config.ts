@@ -20,8 +20,10 @@ export default defineConfig({
             reportsDirectory: './test/unit/coverage',
             reporter: ['text', 'json', 'html'],
             exclude: [
+                './test/**',
                 '**/node_modules/**',
                 '**/dist/**',
+                '**/storybook-static',
                 '**/.{idea,git,cache,output,temp,next}/**',
                 '**/*.stories.*',
                 '**/*.config.*',
