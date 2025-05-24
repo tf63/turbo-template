@@ -18,10 +18,10 @@
     },
     "dependencies": {
         "@repo/ui": "workspace:*",
-        "clsx": "^2.1.1",
+        "clsx": "2.1.1",
         "react": "catalog:react",
         "react-dom": "catalog:react",
-        "tailwind-merge": "^2.6.0"
+        "tailwind-merge": "2.6.0"
     },
     "devDependencies": {
         "@types/react": "catalog:react",
@@ -30,6 +30,6 @@
         "@repo/storybook": "workspace:*",
         "@repo/tailwind": "workspace:*",
         "@repo/typescript": "workspace:*",
-        "@types/chrome": "^0.0.277"
+        "@types/chrome": "0.0.277"
     }
 }

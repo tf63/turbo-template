@@ -5,8 +5,8 @@ packages:
 
 catalogs:
     next:
-        'next': '14.2.22'
-        '@next/bundle-analyzer': '14.2.22'
+        'next': '14.2.26'
+        '@next/bundle-analyzer': '14.2.26'
 
     react:
         'react': '18.3.1'

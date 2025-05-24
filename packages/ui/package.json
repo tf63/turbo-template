@@ -23,10 +23,6 @@
         "test:ui": "vitest watch --ui",
         "clean": "rm -rf node_modules/ .turbo/ dist/"
     },
-    "peerDependencies": {
-        "react": "catalog:react",
-        "react-dom": "catalog:react"
-    },
     "devDependencies": {
         "@types/react": "catalog:react",
         "@types/react-dom": "catalog:react",

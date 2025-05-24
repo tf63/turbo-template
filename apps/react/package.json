@@ -19,10 +19,8 @@
     },
     "dependencies": {
         "@repo/ui": "workspace:*",
-        "clsx": "^2.1.1",
-        "react": "catalog:react",
-        "react-dom": "catalog:react",
-        "tailwind-merge": "^2.5.2"
+        "clsx": "2.1.1",
+        "tailwind-merge": "2.5.2"
     },
     "devDependencies": {
         "@types/react": "catalog:react",
