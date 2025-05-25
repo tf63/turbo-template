@@ -5,7 +5,7 @@ import { Card } from './card'
 type CardType = typeof Card
 
 export default {
-    title: 'Ui/Card',
+    title: 'Card',
     component: Card,
     render: (props) => <Card {...props} />,
     decorators: [(Story: StoryFn) => <Story />],
