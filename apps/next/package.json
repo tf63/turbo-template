@@ -3,7 +3,6 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "predev": "rm -rf .next/",
         "dev": "next dev --port 3000",
         "prebuild": "rm -rf .next/",
         "build": "next build",
@@ -32,9 +31,10 @@
     },
     "devDependencies": {
         "@next/bundle-analyzer": "catalog:next",
-        "@types/react": "catalog:react",
-        "@types/react-dom": "catalog:react",
         "@repo/tailwind": "workspace:*",
-        "@repo/typescript": "workspace:*"
+        "@repo/typescript": "workspace:*",
+        "@storybook/experimental-nextjs-vite": "^8.6.14",
+        "@types/react": "catalog:react",
+        "@types/react-dom": "catalog:react"
     }
 }

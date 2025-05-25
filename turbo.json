@@ -26,6 +26,20 @@
             "dependsOn": ["test:e2e"],
             "persistent": true
         },
+        "storybook": {
+            "cache": false,
+            "persistent": true
+        },
+        "storybook:build": {
+            "dependsOn": ["build"],
+            "outputs": ["storybook-static/**"]
+        },
+        "storybook:serve": {
+            "cache": false,
+            "persistent": true
+        },
+        "storybook:test": {},
+        "storybook:test:watch": {},
         "dev": {
             "cache": false,
             "persistent": true

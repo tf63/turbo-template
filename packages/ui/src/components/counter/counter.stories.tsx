@@ -1,16 +1,17 @@
-import type { Meta, StoryFn, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react'
 import { expect, userEvent, within } from '@storybook/test'
 
 import { Counter } from './counter'
 
 type CounterType = typeof Counter
 
-export default {
+const meta: Meta<CounterType> = {
     title: 'Counter',
     component: Counter,
     render: (props) => <Counter {...props} />,
-    decorators: [(Story: StoryFn) => <Story />],
-} satisfies Meta<CounterType>
+    decorators: [(Story) => Story()],
+}
+export default meta
 
 export const Default: StoryObj<CounterType> = {
     args: {},
