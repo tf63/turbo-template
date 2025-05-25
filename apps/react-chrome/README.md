@@ -1,6 +1,6 @@
 # React Chrome Extension
 
-Chrome Extension built with [React 18](https://react.dev/), using [CRX](https://crxjs.dev/vite-plugin/), [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/)
+Chrome Extension built with [React 19](https://react.dev/), using [CRX](https://crxjs.dev/vite-plugin/), [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/)
 
 ## Getting Started
 
@@ -10,8 +10,8 @@ To get started with this Chrome Extension, follow these steps:
 
 Ensure you have the following installed:
 
--   Node.js (v20.11.0)
--   pnpm (v8.15.6)
+- Node.js (v20.11.0)
+- pnpm (v8.15.6)
 
 ### Installation
 

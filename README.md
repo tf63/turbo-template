@@ -1,6 +1,6 @@
 # Turborepo Template
 
-This repository provides a monorepo setup for web frontend development (React 18, Next.js 14, Chrome extension)
+This repository provides a monorepo setup for web frontend development (React 19, Next.js 15, Chrome extension)
 
 ## Commands
 
@@ -60,9 +60,9 @@ This repository utilizes the following tools:
 
 | repo             | description                                                                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **next**         | [Next.js 14](https://nextjs.org/) (App Router) application with [Tailwind CSS](https://tailwindcss.com/)                                                                          |
-| **react**        | [React 18](https://react.dev/) application using [Vite](https://vitejs.dev/) for bundling and [Tailwind CSS](https://tailwindcss.com/)                                            |
-| **react-chrome** | Chrome Extension built with [React 18](https://react.dev/), using [CRX](https://crxjs.dev/vite-plugin/), [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/) |
+| **next**         | [Next.js 15](https://nextjs.org/) (App Router) application with [Tailwind CSS](https://tailwindcss.com/)                                                                          |
+| **react**        | [React 19](https://react.dev/) application using [Vite](https://vitejs.dev/) for bundling and [Tailwind CSS](https://tailwindcss.com/)                                            |
+| **react-chrome** | Chrome Extension built with [React 19](https://react.dev/), using [CRX](https://crxjs.dev/vite-plugin/), [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/) |
 | **storybook**    | [Storybook](https://storybook.js.org/) setup for managing UI components and their development.                                                                                    |
 
 ### packages
